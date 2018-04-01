@@ -1,0 +1,41 @@
+#!/usr/bin/perl
+
+use strict;
+use warnings;
+use feature 'say';
+
+use JSON;
+
+my $json = JSON->new->pretty->utf8;
+
+open my $d_fh, '>', 'docs/data.js' or die "$!";
+
+open my $s_fh, '<', 'stadiums.csv' or die "$!";
+
+my $stadiums;
+
+my @cols = qw[code name city timezone];
+
+while (<$s_fh>) {
+  chomp;
+  my %stad;
+  @stad{@cols} = split /,/;
+  $stadiums->{$stad{code}} = \%stad;
+}
+
+say $d_fh 'var stadiums = ' . $json->encode($stadiums) . ";\n";
+
+open my $g_fh, '<', 'games.csv' or die "$!";
+
+my $games;
+
+@cols = qw[round date stadium team1 team2 group result];
+
+while (<$g_fh>) {
+  chomp;
+  my %game;
+  @game{@cols} = split /,/;
+  push @$games, \%game;
+}
+
+say $d_fh 'var games = ' . $json->encode($games) . ";\n";
