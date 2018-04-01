@@ -3,18 +3,28 @@
     <title>Dave's World Cup Page</title>
     <script src="data.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script src="https://raw.githubusercontent.com/janl/mustache.js/master/mustache.js"></script>
-    <script>
-$.get('game.mst', function(template) {
-  var rendered = Mustache.render(template, games);
-  $('#list').html(rendered);
-});
-    </script>
+    <script src="mustache.js"></script>
   <head>
   <body>
     <h1>Dave's World Cup Page</h1>
     <p>Coming soon...</p>
     <p><a href="https://twitter.com/davorg">@davorg</a></p>
     <div id="list"></div>
+
+    <script id="games-template" type="text/template">
+<ul>
+{{#games}}
+<li>{{date}} {{team1}} vs {{team2}}
+stadiums.{{stadium}}</li>
+{{/games}}
+</ul>
+    </script>
+    <script>
+$(document).ready(function() {
+  var template = $('#games-template').html();
+  var rendered = Mustache.render(template, { games: games, stadiums: stadiums });
+  $('#list').html(rendered);
+});
+    </script>
   </body>
 </html>
