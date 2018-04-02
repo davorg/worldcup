@@ -4,17 +4,18 @@ use strict;
 use warnings;
 use feature 'say';
 
+use Time::Piece;
 use JSON;
 
 my $json = JSON->new->pretty->utf8;
 
-open my $d_fh, '>', 'docs/data.js' or die "$!";
+open my $d_fh, '>', 'docs/js/data.js' or die "$!";
 
 open my $s_fh, '<', 'stadiums.csv' or die "$!";
 
 my $stadiums;
 
-my @cols = qw[code name city timezone];
+my @cols = qw[code name city utcoffset timezone];
 
 while (<$s_fh>) {
   chomp;
@@ -29,12 +30,14 @@ open my $g_fh, '<', 'games.csv' or die "$!";
 
 my $games;
 
-@cols = qw[round date stadium team1 team2 group result];
+@cols = qw[description date stadium team1 team2 group result];
 
 while (<$g_fh>) {
   chomp;
   my %game;
   @game{@cols} = split /,/;
+  $game{description} = $game{group} if $game{description} !~ /\D/;
+  $game{date} = Time::Piece->strptime($game{date}, '%d/%m/%Y %H:%M')->datetime;
   push @$games, \%game;
 }
 

@@ -1,12 +1,12 @@
-CEN,Central Stadium,Yekaterinburg,5
-COS,Cosmos Arena,Samara,4
-FIS,Fisht Olympic Stadium,Sochi,4
-KAL,Kaliningrad Stadium,Kaliningrad,2
-KAZ,Kazan Arena,Kazan,3
-KRE,Krestovsky Stadium,Saint Petersburg,3
-LUZ,Luzhniki Stadium,Moscow,3
-MOR,Mordovia Arena,Saransk,3
-NIZ,Nizhny Novgorod Stadium,Nizhny Novgorod,3
-OTK,Otkritie Arena,Moscow,3
-ROS,Rostov Arena,Rostov-on-Don,3
-VOL,Volgograd Arena,Volgograd,3
+CEN,Central Stadium,Yekaterinburg,5,Asia/Yekaterinburg
+COS,Cosmos Arena,Samara,4,Europe/Samara,Europe/Samara
+FIS,Fisht Olympic Stadium,Sochi,4,Europe/Moscow
+KAL,Kaliningrad Stadium,Kaliningrad,2,Europe/Kaliningrad
+KAZ,Kazan Arena,Kazan,3,Europe/Moscow
+KRE,Krestovsky Stadium,Saint Petersburg,3,Europe/Moscow
+LUZ,Luzhniki Stadium,Moscow,3,Europe/Moscow
+MOR,Mordovia Arena,Saransk,3,Europe/Moscow
+NIZ,Nizhny Novgorod Stadium,Nizhny Novgorod,3,Europe/Moscow
+OTK,Otkritie Arena,Moscow,3,Europe/Moscow
+ROS,Rostov Arena,Rostov-on-Don,3,Europe/Moscow
+VOL,Volgograd Arena,Volgograd,3,Europe/Volgograd
