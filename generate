@@ -28,7 +28,7 @@ say $d_fh 'var stadiums = ' . $json->encode($stadiums) . ";\n";
 
 open my $g_fh, '<', 'games.csv' or die "$!";
 
-my $games;
+my ($games, $teams, $rounds);
 
 @cols = qw[description date stadium team1 team2 group result];
 
@@ -45,10 +45,21 @@ while (<$g_fh>) {
   push @classes, grep{  !/^(Winner|Runner|To be)/ }
 		 @game{qw[team1 team2]};
 
-  @classes = map { s/\s+/-/g; lc $_ } @classes;
-  $game{class} = join ' ', @classes;
+  $game{class} = join ' ', map { to_class($_) } @classes;
 
   push @$games, \%game;
+
+  for my $t (qw[team1 team2]) {
+    next if $game{$t} =~ /^(Winner|Runner|To be)/;
+    $teams->{$game{$t}}++;
+  }
 }
 
 say $d_fh 'var games = ' . $json->encode($games) . ";\n";
+say $d_fh 'var teams = ' . $json->encode([map { { $_ => to_class($_) } } sort keys %$teams]) . ";\n";
+
+sub to_class {
+  my $in = shift;
+  $in =~ s/\s+/-/g;
+  return lc $in;
+}
