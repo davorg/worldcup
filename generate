@@ -44,8 +44,9 @@ while (<$g_fh>) {
 
   $game{date} = Time::Piece->strptime($game{date}, '%d/%m/%Y %H:%M')->datetime;
 
-  my @classes = ($game{description}, $game{stadium});
-  push @classes, grep{  !/^(Winner|Runner|To be)/ }
+  my @classes = ("round-$game{description}", "stadium-$game{stadium}");
+  push @classes, map { "team-$_" }
+                 grep{ !/^(Winner|Runner|To be)/ }
 		 @game{qw[team1 team2]};
 
   $game{class} = join ' ', map { to_class($_) } @classes;
