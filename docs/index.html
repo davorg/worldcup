@@ -67,41 +67,7 @@
   </tbody>
 </table>
     </script>
-    <script>
-$(document).ready(function() {
-  var yourtimezone = moment.tz.guess();
-  $('#yourtimezone').html(yourtimezone);
-
-  var team_select = $('#team');
-
-  for (i = 0; i < teams.length; i++) {
-    $.each(teams[i], function(key, value) {
-      team_select.append($('<option>', { "value" : value }).text(key));
-    });
-  }
-
-  var stadium_select = $('#stadium');
-
-  $.each(stadiums, function(key, value) {
-    stadium_select.append($('<option>', { "value" : key })
-      .text(value.name + ', ' + value.city));
-  });
-
-  for (i = 0; i < games.length; i++) {
-    var stadium = stadiums[games[i].stadium];
-    games[i].stadium = stadium.name;
-    games[i].city = stadium.city;
-    var time = moment.tz(games[i].date, 'UTC');
-    games[i].timeutc = time.format('llll');
-    games[i].timestadium = time.clone().tz(stadium.timezone).format('llll');
-    games[i].timeuser = time.clone().tz(yourtimezone).format('llll');
-  }
-
-  var template = $('#games-template').html();
-  var rendered = Mustache.render(template, { games: games, stadiums: stadiums });
-  $('#list').html(rendered);
-});
-    </script>
+    <script src="js/worldcup.js"></script>
     <footer class="footer">
       <div class="container">
         <span class="text-muted">Made by <a href="https://twitter.com/davorg">@davorg</a> /
