@@ -12,7 +12,12 @@ $(document).ready(function() {
     games[i].timeuser = time.clone().tz(yourtimezone).format('llll');
   }
 
-  var template = $('#games-template').html();
-  var rendered = Mustache.render(template, { games: games, stadiums: stadiums });
-  $('#list').html(rendered);
+  $.get('templates.html', function(templates) {
+    var template = $(templates).filter('#games-template').html();
+    var rendered = Mustache.render(template, {
+      games:    games,
+      stadiums: stadiums
+    });
+    $('#list').html(rendered);
+  });
 });
