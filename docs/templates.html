@@ -2,12 +2,37 @@
 <table class="table table-striped table-bordered table-hover table-sm">
   <thead>
     <tr>
-      <th rowspan="2">&nbsp;</th>
-      <th rowspan="2">Teams</th>
-      <th rowspan="2">Venue</th>
+      <td>
+        <form class="form-inline">
+          <select name="type">
+            <option value="">-- All --</option>
+          </select>
+        </form>
+      </td>
+      <td>
+        <form class="form-inline">
+          <select name="team">
+            <option value="">-- All --</option>
+{{#teams}}
+            <option value="{{id}}">{{name}}</option>
+{{/teams}}
+          </select>
+        </form>
+      </td>
+      <td>
+        <form class="form-inline">
+          <select name="stadium">
+            <option value="">-- All --</option>
+{{#stadiums}}
+            <option value="{{code}}">{{name}}</option>
+{{/stadiums}}
+          </select>
+        </form>
+      </td>
       <th colspan="3">Kick-Off Times</th>
     </tr>
     <tr>
+      <th>&nbsp;</th><th>Teams</th><th>Venue</th>
       <th>Stadium Local</th><th>UTC</th><th>Your Local</th>
     </tr>
   </thead>

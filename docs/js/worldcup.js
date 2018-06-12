@@ -15,6 +15,7 @@ $(document).ready(function() {
   $.get('templates.html', function(templates) {
     var template = $(templates).filter('#games-template').html();
     var rendered = Mustache.render(template, {
+      teams:    teams,
       games:    games,
       stadiums: stadiums
     });
