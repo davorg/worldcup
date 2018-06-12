@@ -13,7 +13,7 @@ open my $d_fh, '>', 'docs/js/data.js' or die "$!";
 
 open my $s_fh, '<', 'stadiums.csv' or die "$!";
 
-my $stadiums;
+my ($stadiums, $stadiums_lookup);
 
 my @cols = qw[code name city utcoffset timezone];
 
@@ -21,10 +21,12 @@ while (<$s_fh>) {
   chomp;
   my %stad;
   @stad{@cols} = split /,/;
-  $stadiums->{$stad{code}} = \%stad;
+  $stadiums_lookup->{$stad{code}} = \%stad;
+  push @$stadiums, \%stad;
 }
 
-say $d_fh 'var stadiums = ' . $json->encode($stadiums) . ";\n";
+say $d_fh 'var stadiums = '        . $json->encode($stadiums) . ";\n";
+say $d_fh 'var stadiums_lookup = ' . $json->encode($stadiums_lookup) . ";\n";
 
 open my $g_fh, '<', 'games.csv' or die "$!";
 
@@ -38,6 +40,7 @@ while (<$g_fh>) {
   @game{@cols} = split /,/;
 
   $game{description} = $game{group} if $game{description} !~ /\D/;
+  $rounds->{$game{description}} = 1;
 
   $game{date} = Time::Piece->strptime($game{date}, '%d/%m/%Y %H:%M')->datetime;
 
@@ -55,8 +58,9 @@ while (<$g_fh>) {
   }
 }
 
+say $d_fh 'var rounds = ' . $json->encode([ map { { $_ => to_class($_} }} sort keys %$rounds ]) . ";\n";
 say $d_fh 'var games = ' . $json->encode($games) . ";\n";
-say $d_fh 'var teams = ' . $json->encode([map { { $_ => to_class($_) } } sort keys %$teams]) . ";\n";
+say $d_fh 'var teams = ' . $json->encode([map { { $_ => to_class($_) } } sort keys %$teams ]) . ";\n";
 
 sub to_class {
   my $in = shift;
