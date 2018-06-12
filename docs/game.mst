@@ -1,5 +1,0 @@
-<ul>
-{{#games}}
-<li>{{date}}</li>
-{{/games}}
-</ul>
