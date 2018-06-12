@@ -3,7 +3,7 @@ $(document).ready(function() {
   $('#yourtimezone').html(yourtimezone);
 
   for (i = 0; i < games.length; i++) {
-    var stadium = stadiums[games[i].stadium];
+    var stadium = stadiums_lookup[games[i].stadium];
     games[i].stadium = stadium.name;
     games[i].city = stadium.city;
     var time = moment.tz(games[i].date, 'UTC');
@@ -15,9 +15,10 @@ $(document).ready(function() {
   $.get('templates.html', function(templates) {
     var template = $(templates).filter('#games-template').html();
     var rendered = Mustache.render(template, {
+      rounds:   rounds,
       teams:    teams,
-      games:    games,
-      stadiums: stadiums
+      stadiums: stadiums,
+      games:    games
     });
     $('#list').html(rendered);
   });
