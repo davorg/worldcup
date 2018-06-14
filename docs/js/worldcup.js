@@ -15,11 +15,50 @@ $(document).ready(function() {
   $.get('templates.html', function(templates) {
     var template = $(templates).filter('#games-template').html();
     var rendered = Mustache.render(template, {
-      rounds:   rounds,
-      teams:    teams,
-      stadiums: stadiums,
       games:    games
     });
     $('#list').html(rendered);
+  });
+
+  var select = $('select#round');
+  $.each(rounds, function(i, r) {
+    select.append(new Option(r.name, r.class, true, true));
+  });
+  select.val('');
+
+  select = $('select#team');
+  $.each(teams, function(i, r) {
+    select.append(new Option(r.name, r.class, true, true));
+  });
+  select.val('');
+
+  select = $('select#stadium');
+  $.each(stadiums, function(i, r) {
+    select.append(new Option(r.name, r.code.toLowerCase(), true, true));
+  });
+  select.val('');
+
+  $('.filter').change(function(e) {
+    var round_sel   = $('select#round').val();
+    var team_sel    = $('select#team').val();
+    var stadium_sel = $('select#stadium').val();
+    var sel_class = '';
+    if (round_sel) {
+      sel_class = '.round-' + round_sel;
+    }
+    if (team_sel) {
+      sel_class = sel_class + '.team-' + team_sel;
+    }
+    if (stadium_sel) {
+      sel_class = sel_class + '.stadium-' + stadium_sel;
+    }
+    if (sel_class) {
+      alert('Showing ' + sel_class);
+      $('game').hide(400);
+      $(sel_class).show(400);
+    } else {
+      alert('Showing everything');
+      $('game').show(400);
+    }
   });
 });

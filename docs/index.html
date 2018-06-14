@@ -27,7 +27,7 @@
     <script src="js/moment.js"></script>
     <script src="js/moment-timezone.min.js"></script>
     <script src="js/moment-timezone-with-data-2012-2022.js"></script>
-    
+
     <!-- My JS -->
     <script src="js/data.js"></script>
     <script src="js/worldcup.js"></script>
@@ -42,7 +42,40 @@
         <h1>Dave's World Cup Page</h1>
         <p>Showing when World Cup games take place in your local timezone.</p>
         <p>Your timezone is: <span id="yourtimezone" title="That's what your browser has told us.&#013;If it's not correct, you should probably check your browser settings"></span>.</p>
-        <div id="list"></div>
+          <table class="table table-striped table-bordered table-hover table-sm">
+            <thead>
+              <tr>
+                <th>&nbsp;</th><th>Teams</th><th>Venue</th>
+                <th colspan="3">Kick-Off Times</th>
+              </tr>
+              <tr>
+                <td>
+                  <form class="form-inline">
+                    <select name="round" id="round" class="filter">
+                      <option value="">-- All --</option>
+                    </select>
+                  </form>
+                </td>
+                <td>
+                  <form class="form-inline">
+                    <select name="team" id="team" class="filter">
+                      <option value="">-- All --</option>
+                    </select>
+                  </form>
+                </td>
+                <td>
+                  <form class="form-inline">
+                    <select name="stadium" id="stadium" class="filter">
+                      <option value="">-- All --</option>
+                    </select>
+                  </form>
+                </td>
+                <th>Stadium Local</th><th>UTC</th><th>Your Local</th>
+              </tr>
+            </thead>
+            <tbody id="list">
+            </tbody>
+          </table>
       </div>
     </main><!-- /.container -->
 
