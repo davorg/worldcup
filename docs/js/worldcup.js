@@ -22,6 +22,8 @@ $(document).ready(function() {
     });
     $('#list').html(rendered);
   });
+  console.log($('.past'));
+  $('.past').hide(400);
 });
 
 function game_class(now, a_game) {
