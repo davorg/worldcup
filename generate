@@ -44,12 +44,20 @@ while (<$g_fh>) {
   my @classes = ("round-$game{description}", "stadium-$game{stadium}");
   push @classes, map { "team-$_" }
                  grep{ !/^(Winner|Runner|To be)/ }
-		 @game{qw[team1 team2]};
+                 @game{qw[team1 team2]};
 
-  @classes = map { s/\s+/-/g; lc $_ } @classes;
+  @classes = map { name2class($_) } @classes;
   $game{class} = join ' ', @classes;
 
   push @$games, \%game;
 }
 
 say $d_fh 'var games = ' . $json->encode($games) . ";\n";
+
+sub name2class {
+  my ($name) = @_;
+
+  $name =~ s/\s+/-/g;
+
+  return lc $name;
+}
