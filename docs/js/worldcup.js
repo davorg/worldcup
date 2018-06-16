@@ -1,12 +1,31 @@
+function gameClass(now, a_game) {
+  var gameStart = moment.tz(a_game.date, 'UTC');
+  var gameEnd   = gameStart.clone().add(105, 'minutes');
+
+  if (gameEnd < now) {
+    return 'past';
+  }
+  if (gameStart <= now && now <= gameEnd) {
+    return 'present';
+  }
+
+  return 'future';
+}
+
 $(document).ready(function() {
-  var yourtimezone = moment.tz.guess();
-  $('#yourtimezone').html(yourtimezone);
-  var now = moment();
+  var now;
+  var stadium;
+  var time;
+  var template;
+  var rendered;
+
+  $('#yourtimezone').html(moment.tz.guess());
+  now = moment();
 
   for (i = 0; i < games.length; i++) {
-    var stadium = stadiums[games[i].stadium];
-    var time = moment.tz(games[i].date, 'UTC');
-    games[i].class = games[i].class + ' ' + game_class(now, games[i]);
+    stadium = stadiums[games[i].stadium];
+    time = moment.tz(games[i].date, 'UTC');
+    games[i].class = games[i].class + ' ' + gameClass(now, games[i]);
     games[i].stadium = stadium.name;
     games[i].city = stadium.city;
     games[i].timeutc = time.format('llll');
@@ -15,8 +34,8 @@ $(document).ready(function() {
   }
 
   $.get('templates.html', function(templates) {
-    var template = $(templates).filter('#games-template').html();
-    var rendered = Mustache.render(template, {
+    template = $(templates).filter('#games-template').html();
+    rendered = Mustache.render(template, {
       games:    games,
       stadiums: stadiums
     });
@@ -26,15 +45,3 @@ $(document).ready(function() {
   $('.past').hide(400);
 });
 
-function game_class(now, a_game) {
-  var game_start = moment.tz(a_game.date, 'UTC');
-  var game_end   = game_start.clone().add(105, 'minutes');
-
-  if (game_end < now) {
-    return 'past';
-  }
-  if (game_start <= now && now <= game_end) {
-    return 'present';
-  }
-  return 'future';
-}
