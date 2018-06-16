@@ -39,6 +39,7 @@ $(document).ready(function() {
   select.val('');
 
   $('.filter').change(function(e) {
+    e.preventDefault();
     var round_sel   = $('select#round').val();
     var team_sel    = $('select#team').val();
     var stadium_sel = $('select#stadium').val();
@@ -53,11 +54,12 @@ $(document).ready(function() {
       sel_class = sel_class + '.stadium-' + stadium_sel;
     }
     if (sel_class) {
-      alert('Showing ' + sel_class);
+      console.log('Showing ' + sel_class);
       $('game').hide(400);
+      console.log($(sel_class));
       $(sel_class).show(400);
     } else {
-      alert('Showing everything');
+      console.log('Showing everything');
       $('game').show(400);
     }
   });
