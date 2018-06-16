@@ -18,8 +18,10 @@ $(document).ready(function() {
   var time;
   var template;
   var rendered;
+  var yourtimezone;
 
-  $('#yourtimezone').html(moment.tz.guess());
+  yourtimezone = moment.tz.guess();
+  $('#yourtimezone').html(yourtimezone);
   now = moment();
 
   for (i = 0; i < games.length; i++) {
