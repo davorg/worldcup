@@ -1,5 +1,5 @@
-function gameClass(now, a_game) {
-  var gameStart = moment.tz(a_game.date, 'UTC');
+function gameClass(now, aGame) {
+  var gameStart = moment.tz(aGame.date, 'UTC');
   var gameEnd   = gameStart.clone().add(105, 'minutes');
 
   if (gameEnd < now) {
@@ -43,7 +43,6 @@ $(document).ready(function() {
     });
     $('#list').html(rendered);
   });
-  console.log($('.past'));
+  // console.log($('.past'));
   $('.past').hide(400);
 });
-
