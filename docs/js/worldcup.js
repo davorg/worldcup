@@ -12,6 +12,14 @@ function gameClass(now, aGame) {
   return 'future';
 }
 
+function showHide(show) {
+  if (show) {
+    $('.past').show(400);
+  } else {
+    $('.past').hide(400);
+  }
+}
+
 $(document).ready(function() {
   var now;
   var stadium;
@@ -44,5 +52,9 @@ $(document).ready(function() {
     $('#list').html(rendered);
     // console.log($('.past'));
     $('.past').hide(400);
+  });
+
+  $('#showpast').click(function() {
+    showHide(this.checked);
   });
 });
