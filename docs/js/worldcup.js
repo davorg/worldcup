@@ -42,7 +42,7 @@ $(document).ready(function() {
       stadiums: stadiums
     });
     $('#list').html(rendered);
+    // console.log($('.past'));
+    $('.past').hide(400);
   });
-  // console.log($('.past'));
-  $('.past').hide(400);
 });
