@@ -639,7 +639,7 @@ var games = [
    },
    {
       "team2" : "England",
-      "date" : "2018-07-03T10:00:00",
+      "date" : "2018-07-03T18:00:00",
       "description" : "Round of 16",
       "group" : null,
       "class" : "round-round-of-16 stadium-otk team-colombia team-england",
