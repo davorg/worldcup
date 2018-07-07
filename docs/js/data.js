@@ -1,731 +1,731 @@
 var stadiums = {
-   "VOL" : {
-      "city" : "Volgograd",
-      "timezone" : "Europe/Volgograd",
-      "name" : "Volgograd Arena",
-      "utcoffset" : "3",
-      "code" : "VOL"
-   },
-   "NIZ" : {
-      "city" : "Nizhny Novgorod",
-      "timezone" : "Europe/Moscow",
-      "name" : "Nizhny Novgorod Stadium",
-      "utcoffset" : "3",
-      "code" : "NIZ"
-   },
-   "MOR" : {
-      "city" : "Saransk",
-      "timezone" : "Europe/Moscow",
-      "name" : "Mordovia Arena",
-      "utcoffset" : "3",
-      "code" : "MOR"
-   },
    "KRE" : {
-      "city" : "Saint Petersburg",
+      "code" : "KRE",
       "timezone" : "Europe/Moscow",
       "name" : "Krestovsky Stadium",
+      "city" : "Saint Petersburg",
+      "utcoffset" : "3"
+   },
+   "VOL" : {
       "utcoffset" : "3",
-      "code" : "KRE"
+      "city" : "Volgograd",
+      "name" : "Volgograd Arena",
+      "timezone" : "Europe/Volgograd",
+      "code" : "VOL"
+   },
+   "LUZ" : {
+      "timezone" : "Europe/Moscow",
+      "name" : "Luzhniki Stadium",
+      "code" : "LUZ",
+      "city" : "Moscow",
+      "utcoffset" : "3"
+   },
+   "KAZ" : {
+      "utcoffset" : "3",
+      "city" : "Kazan",
+      "code" : "KAZ",
+      "timezone" : "Europe/Moscow",
+      "name" : "Kazan Arena"
+   },
+   "ROS" : {
+      "code" : "ROS",
+      "timezone" : "Europe/Moscow",
+      "name" : "Rostov Arena",
+      "city" : "Rostov-on-Don",
+      "utcoffset" : "3"
+   },
+   "OTK" : {
+      "utcoffset" : "3",
+      "city" : "Moscow",
+      "timezone" : "Europe/Moscow",
+      "name" : "Otkritie Arena",
+      "code" : "OTK"
+   },
+   "MOR" : {
+      "utcoffset" : "3",
+      "city" : "Saransk",
+      "timezone" : "Europe/Moscow",
+      "code" : "MOR",
+      "name" : "Mordovia Arena"
+   },
+   "KAL" : {
+      "code" : "KAL",
+      "timezone" : "Europe/Kaliningrad",
+      "name" : "Kaliningrad Stadium",
+      "city" : "Kaliningrad",
+      "utcoffset" : "2"
+   },
+   "COS" : {
+      "utcoffset" : "4",
+      "code" : "COS",
+      "timezone" : "Europe/Samara",
+      "name" : "Cosmos Arena",
+      "city" : "Samara"
    },
    "FIS" : {
       "city" : "Sochi",
       "timezone" : "Europe/Moscow",
+      "code" : "FIS",
       "name" : "Fisht Olympic Stadium",
-      "utcoffset" : "4",
-      "code" : "FIS"
+      "utcoffset" : "4"
    },
-   "ROS" : {
-      "city" : "Rostov-on-Don",
-      "timezone" : "Europe/Moscow",
-      "name" : "Rostov Arena",
+   "NIZ" : {
       "utcoffset" : "3",
-      "code" : "ROS"
-   },
-   "OTK" : {
-      "city" : "Moscow",
+      "code" : "NIZ",
       "timezone" : "Europe/Moscow",
-      "name" : "Otkritie Arena",
-      "utcoffset" : "3",
-      "code" : "OTK"
+      "name" : "Nizhny Novgorod Stadium",
+      "city" : "Nizhny Novgorod"
    },
    "CEN" : {
-      "city" : "Yekaterinburg",
-      "timezone" : "Asia/Yekaterinburg",
-      "name" : "Central Stadium",
       "utcoffset" : "5",
+      "city" : "Yekaterinburg",
+      "name" : "Central Stadium",
+      "timezone" : "Asia/Yekaterinburg",
       "code" : "CEN"
-   },
-   "COS" : {
-      "city" : "Samara",
-      "timezone" : "Europe/Samara",
-      "name" : "Cosmos Arena",
-      "utcoffset" : "4",
-      "code" : "COS"
-   },
-   "KAL" : {
-      "city" : "Kaliningrad",
-      "timezone" : "Europe/Kaliningrad",
-      "name" : "Kaliningrad Stadium",
-      "utcoffset" : "2",
-      "code" : "KAL"
-   },
-   "KAZ" : {
-      "city" : "Kazan",
-      "timezone" : "Europe/Moscow",
-      "name" : "Kazan Arena",
-      "utcoffset" : "3",
-      "code" : "KAZ"
-   },
-   "LUZ" : {
-      "city" : "Moscow",
-      "timezone" : "Europe/Moscow",
-      "name" : "Luzhniki Stadium",
-      "utcoffset" : "3",
-      "code" : "LUZ"
    }
 }
 ;
 
 var games = [
    {
-      "team2" : "Saudi Arabia",
       "date" : "2018-06-14T15:00:00",
-      "description" : "Group A",
+      "team2" : "Saudi Arabia",
+      "result" : null,
       "group" : "Group A",
       "class" : "round-group-a stadium-luz team-russia team-saudi-arabia",
+      "description" : "Group A",
       "stadium" : "LUZ",
-      "team1" : "Russia",
-      "result" : null
+      "team1" : "Russia"
    },
    {
+      "result" : null,
       "team2" : "Uruguay",
       "date" : "2018-06-15T12:00:00",
-      "description" : "Group A",
-      "group" : "Group A",
-      "class" : "round-group-a stadium-cen team-egypt team-uruguay",
-      "stadium" : "CEN",
       "team1" : "Egypt",
-      "result" : null
+      "description" : "Group A",
+      "stadium" : "CEN",
+      "class" : "round-group-a stadium-cen team-egypt team-uruguay",
+      "group" : "Group A"
    },
    {
-      "team2" : "Iran",
       "date" : "2018-06-15T15:00:00",
-      "description" : "Group B",
+      "team2" : "Iran",
+      "result" : null,
       "group" : "Group B",
       "class" : "round-group-b stadium-kre team-morocco team-iran",
+      "description" : "Group B",
       "stadium" : "KRE",
-      "team1" : "Morocco",
-      "result" : null
+      "team1" : "Morocco"
    },
    {
+      "result" : null,
       "team2" : "Spain",
       "date" : "2018-06-15T18:00:00",
-      "description" : "Group B",
-      "group" : "Group B",
-      "class" : "round-group-b stadium-fis team-portugal team-spain",
-      "stadium" : "FIS",
       "team1" : "Portugal",
-      "result" : null
+      "stadium" : "FIS",
+      "description" : "Group B",
+      "class" : "round-group-b stadium-fis team-portugal team-spain",
+      "group" : "Group B"
    },
    {
-      "team2" : "Australia",
       "date" : "2018-06-16T10:00:00",
-      "description" : "Group C",
+      "team2" : "Australia",
+      "result" : null,
       "group" : "Group C",
       "class" : "round-group-c stadium-kaz team-france team-australia",
       "stadium" : "KAZ",
-      "team1" : "France",
-      "result" : null
+      "description" : "Group C",
+      "team1" : "France"
    },
    {
       "team2" : "Iceland",
       "date" : "2018-06-16T13:00:00",
-      "description" : "Group D",
-      "group" : "Group D",
+      "result" : null,
       "class" : "round-group-d stadium-otk team-argentina team-iceland",
-      "stadium" : "OTK",
+      "group" : "Group D",
       "team1" : "Argentina",
-      "result" : null
+      "stadium" : "OTK",
+      "description" : "Group D"
    },
    {
+      "result" : null,
       "team2" : "Denmark",
       "date" : "2018-06-16T16:00:00",
-      "description" : "Group C",
-      "group" : "Group C",
-      "class" : "round-group-c stadium-mor team-peru team-denmark",
-      "stadium" : "MOR",
       "team1" : "Peru",
-      "result" : null
+      "description" : "Group C",
+      "stadium" : "MOR",
+      "class" : "round-group-c stadium-mor team-peru team-denmark",
+      "group" : "Group C"
    },
    {
+      "result" : null,
       "team2" : "Nigeria",
       "date" : "2018-06-16T19:00:00",
-      "description" : "Group D",
-      "group" : "Group D",
-      "class" : "round-group-d stadium-kal team-croatia team-nigeria",
-      "stadium" : "KAL",
       "team1" : "Croatia",
-      "result" : null
+      "description" : "Group D",
+      "stadium" : "KAL",
+      "class" : "round-group-d stadium-kal team-croatia team-nigeria",
+      "group" : "Group D"
    },
    {
       "team2" : "Serbia",
       "date" : "2018-06-17T12:00:00",
-      "description" : "Group E",
-      "group" : "Group E",
+      "result" : null,
       "class" : "round-group-e stadium-cos team-costa-rica team-serbia",
-      "stadium" : "COS",
+      "group" : "Group E",
       "team1" : "Costa Rica",
-      "result" : null
+      "stadium" : "COS",
+      "description" : "Group E"
    },
    {
-      "team2" : "Mexico",
+      "result" : null,
       "date" : "2018-06-17T15:00:00",
-      "description" : "Group F",
-      "group" : "Group F",
-      "class" : "round-group-f stadium-luz team-germany team-mexico",
+      "team2" : "Mexico",
       "stadium" : "LUZ",
+      "description" : "Group F",
       "team1" : "Germany",
-      "result" : null
+      "group" : "Group F",
+      "class" : "round-group-f stadium-luz team-germany team-mexico"
    },
    {
       "team2" : "Switzerland",
       "date" : "2018-06-17T18:00:00",
-      "description" : "Group E",
-      "group" : "Group E",
+      "result" : null,
       "class" : "round-group-e stadium-ros team-brazil team-switzerland",
-      "stadium" : "ROS",
+      "group" : "Group E",
       "team1" : "Brazil",
-      "result" : null
+      "description" : "Group E",
+      "stadium" : "ROS"
    },
    {
+      "result" : null,
       "team2" : "Korea Republic",
       "date" : "2018-06-18T12:00:00",
-      "description" : "Group F",
-      "group" : "Group F",
-      "class" : "round-group-f stadium-niz team-sweden team-korea-republic",
-      "stadium" : "NIZ",
       "team1" : "Sweden",
-      "result" : null
+      "description" : "Group F",
+      "stadium" : "NIZ",
+      "class" : "round-group-f stadium-niz team-sweden team-korea-republic",
+      "group" : "Group F"
    },
    {
-      "team2" : "Panama",
-      "date" : "2018-06-18T15:00:00",
       "description" : "Group G",
-      "group" : "Group G",
-      "class" : "round-group-g stadium-fis team-belgium team-panama",
       "stadium" : "FIS",
       "team1" : "Belgium",
-      "result" : null
+      "group" : "Group G",
+      "class" : "round-group-g stadium-fis team-belgium team-panama",
+      "result" : null,
+      "date" : "2018-06-18T15:00:00",
+      "team2" : "Panama"
    },
    {
+      "class" : "round-group-g stadium-vol team-tunisia team-england",
+      "group" : "Group G",
+      "team1" : "Tunisia",
+      "description" : "Group G",
+      "stadium" : "VOL",
       "team2" : "England",
       "date" : "2018-06-18T18:00:00",
-      "description" : "Group G",
-      "group" : "Group G",
-      "class" : "round-group-g stadium-vol team-tunisia team-england",
-      "stadium" : "VOL",
-      "team1" : "Tunisia",
       "result" : null
    },
    {
-      "team2" : "Japan",
-      "date" : "2018-06-19T12:00:00",
       "description" : "Group H",
-      "group" : "Group H",
-      "class" : "round-group-h stadium-mor team-colombia team-japan",
       "stadium" : "MOR",
       "team1" : "Colombia",
-      "result" : null
+      "group" : "Group H",
+      "class" : "round-group-h stadium-mor team-colombia team-japan",
+      "result" : null,
+      "date" : "2018-06-19T12:00:00",
+      "team2" : "Japan"
    },
    {
       "team2" : "Senegal",
       "date" : "2018-06-19T15:00:00",
-      "description" : "Group H",
-      "group" : "Group H",
+      "result" : null,
       "class" : "round-group-h stadium-otk team-poland team-senegal",
-      "stadium" : "OTK",
+      "group" : "Group H",
       "team1" : "Poland",
-      "result" : null
+      "description" : "Group H",
+      "stadium" : "OTK"
    },
    {
-      "team2" : "Egypt",
-      "date" : "2018-06-19T18:00:00",
       "description" : "Group A",
-      "group" : "Group A",
-      "class" : "round-group-a stadium-kre team-russia team-egypt",
       "stadium" : "KRE",
       "team1" : "Russia",
-      "result" : null
+      "group" : "Group A",
+      "class" : "round-group-a stadium-kre team-russia team-egypt",
+      "result" : null,
+      "date" : "2018-06-19T18:00:00",
+      "team2" : "Egypt"
    },
    {
-      "team2" : "Morocco",
       "date" : "2018-06-20T12:00:00",
-      "description" : "Group B",
+      "team2" : "Morocco",
+      "result" : null,
       "group" : "Group B",
       "class" : "round-group-b stadium-luz team-portugal team-morocco",
+      "description" : "Group B",
       "stadium" : "LUZ",
-      "team1" : "Portugal",
-      "result" : null
+      "team1" : "Portugal"
    },
    {
-      "team2" : "Saudi Arabia",
       "date" : "2018-06-20T15:00:00",
-      "description" : "Group A",
+      "team2" : "Saudi Arabia",
+      "result" : null,
       "group" : "Group A",
       "class" : "round-group-a stadium-ros team-uruguay team-saudi-arabia",
       "stadium" : "ROS",
-      "team1" : "Uruguay",
-      "result" : null
+      "description" : "Group A",
+      "team1" : "Uruguay"
    },
    {
-      "team2" : "Spain",
-      "date" : "2018-06-20T18:00:00",
-      "description" : "Group B",
       "group" : "Group B",
       "class" : "round-group-b stadium-kaz team-iran team-spain",
       "stadium" : "KAZ",
+      "description" : "Group B",
       "team1" : "Iran",
+      "date" : "2018-06-20T18:00:00",
+      "team2" : "Spain",
       "result" : null
    },
    {
       "team2" : "Australia",
       "date" : "2018-06-21T12:00:00",
-      "description" : "Group C",
-      "group" : "Group C",
+      "result" : null,
       "class" : "round-group-c stadium-cos team-denmark team-australia",
-      "stadium" : "COS",
+      "group" : "Group C",
       "team1" : "Denmark",
-      "result" : null
+      "stadium" : "COS",
+      "description" : "Group C"
    },
    {
+      "class" : "round-group-c stadium-cen team-france team-peru",
+      "group" : "Group C",
+      "team1" : "France",
+      "stadium" : "CEN",
+      "description" : "Group C",
       "team2" : "Peru",
       "date" : "2018-06-21T15:00:00",
-      "description" : "Group C",
-      "group" : "Group C",
-      "class" : "round-group-c stadium-cen team-france team-peru",
-      "stadium" : "CEN",
-      "team1" : "France",
       "result" : null
    },
    {
-      "team2" : "Croatia",
-      "date" : "2018-06-21T18:00:00",
-      "description" : "Group D",
       "group" : "Group D",
       "class" : "round-group-d stadium-niz team-argentina team-croatia",
+      "description" : "Group D",
       "stadium" : "NIZ",
       "team1" : "Argentina",
+      "date" : "2018-06-21T18:00:00",
+      "team2" : "Croatia",
       "result" : null
    },
    {
+      "class" : "round-group-e stadium-kre team-brazil team-costa-rica",
+      "group" : "Group E",
+      "team1" : "Brazil",
+      "description" : "Group E",
+      "stadium" : "KRE",
       "team2" : "Costa Rica",
       "date" : "2018-06-22T12:00:00",
-      "description" : "Group E",
-      "group" : "Group E",
-      "class" : "round-group-e stadium-kre team-brazil team-costa-rica",
-      "stadium" : "KRE",
-      "team1" : "Brazil",
       "result" : null
    },
    {
-      "team2" : "Iceland",
+      "result" : null,
       "date" : "2018-06-22T15:00:00",
-      "description" : "Group D",
-      "group" : "Group D",
-      "class" : "round-group-d stadium-vol team-nigeria team-iceland",
+      "team2" : "Iceland",
       "stadium" : "VOL",
+      "description" : "Group D",
       "team1" : "Nigeria",
-      "result" : null
+      "group" : "Group D",
+      "class" : "round-group-d stadium-vol team-nigeria team-iceland"
    },
    {
-      "team2" : "Switzerland",
       "date" : "2018-06-22T18:00:00",
-      "description" : "Group E",
+      "team2" : "Switzerland",
+      "result" : null,
       "group" : "Group E",
       "class" : "round-group-e stadium-kal team-serbia team-switzerland",
       "stadium" : "KAL",
-      "team1" : "Serbia",
-      "result" : null
+      "description" : "Group E",
+      "team1" : "Serbia"
    },
    {
-      "team2" : "Tunisia",
-      "date" : "2018-06-23T12:00:00",
-      "description" : "Group G",
-      "group" : "Group G",
-      "class" : "round-group-g stadium-otk team-belgium team-tunisia",
-      "stadium" : "OTK",
       "team1" : "Belgium",
-      "result" : null
+      "description" : "Group G",
+      "stadium" : "OTK",
+      "class" : "round-group-g stadium-otk team-belgium team-tunisia",
+      "group" : "Group G",
+      "result" : null,
+      "team2" : "Tunisia",
+      "date" : "2018-06-23T12:00:00"
    },
    {
-      "team2" : "Mexico",
+      "result" : null,
       "date" : "2018-06-23T15:00:00",
+      "team2" : "Mexico",
       "description" : "Group F",
-      "group" : "Group F",
-      "class" : "round-group-f stadium-ros team-korea-republic team-mexico",
       "stadium" : "ROS",
       "team1" : "Korea Republic",
-      "result" : null
+      "group" : "Group F",
+      "class" : "round-group-f stadium-ros team-korea-republic team-mexico"
    },
    {
-      "team2" : "Sweden",
+      "result" : null,
       "date" : "2018-06-23T18:00:00",
+      "team2" : "Sweden",
       "description" : "Group F",
-      "group" : "Group F",
-      "class" : "round-group-f stadium-fis team-germany team-sweden",
       "stadium" : "FIS",
       "team1" : "Germany",
-      "result" : null
+      "group" : "Group F",
+      "class" : "round-group-f stadium-fis team-germany team-sweden"
    },
    {
       "team2" : "Panama",
       "date" : "2018-06-24T12:00:00",
-      "description" : "Group G",
-      "group" : "Group G",
+      "result" : null,
       "class" : "round-group-g stadium-niz team-england team-panama",
-      "stadium" : "NIZ",
+      "group" : "Group G",
       "team1" : "England",
-      "result" : null
+      "description" : "Group G",
+      "stadium" : "NIZ"
    },
    {
+      "result" : null,
       "team2" : "Senegal",
       "date" : "2018-06-24T15:00:00",
-      "description" : "Group H",
-      "group" : "Group H",
-      "class" : "round-group-h stadium-cen team-japan team-senegal",
-      "stadium" : "CEN",
       "team1" : "Japan",
-      "result" : null
+      "stadium" : "CEN",
+      "description" : "Group H",
+      "class" : "round-group-h stadium-cen team-japan team-senegal",
+      "group" : "Group H"
    },
    {
+      "result" : null,
       "team2" : "Colombia",
       "date" : "2018-06-24T18:00:00",
-      "description" : "Group H",
-      "group" : "Group H",
-      "class" : "round-group-h stadium-kaz team-poland team-colombia",
-      "stadium" : "KAZ",
       "team1" : "Poland",
-      "result" : null
+      "description" : "Group H",
+      "stadium" : "KAZ",
+      "class" : "round-group-h stadium-kaz team-poland team-colombia",
+      "group" : "Group H"
    },
    {
+      "class" : "round-group-a stadium-cos team-uruguay team-russia",
+      "group" : "Group A",
+      "team1" : "Uruguay",
+      "description" : "Group A",
+      "stadium" : "COS",
       "team2" : "Russia",
       "date" : "2018-06-25T14:00:00",
-      "description" : "Group A",
-      "group" : "Group A",
-      "class" : "round-group-a stadium-cos team-uruguay team-russia",
-      "stadium" : "COS",
-      "team1" : "Uruguay",
       "result" : null
    },
    {
-      "team2" : "Egypt",
+      "result" : null,
       "date" : "2018-06-25T14:00:00",
-      "description" : "Group A",
-      "group" : "Group A",
-      "class" : "round-group-a stadium-vol team-saudi-arabia team-egypt",
+      "team2" : "Egypt",
       "stadium" : "VOL",
+      "description" : "Group A",
       "team1" : "Saudi Arabia",
-      "result" : null
+      "group" : "Group A",
+      "class" : "round-group-a stadium-vol team-saudi-arabia team-egypt"
    },
    {
+      "result" : null,
       "team2" : "Portugal",
       "date" : "2018-06-25T18:00:00",
-      "description" : "Group B",
-      "group" : "Group B",
-      "class" : "round-group-b stadium-mor team-iran team-portugal",
-      "stadium" : "MOR",
       "team1" : "Iran",
-      "result" : null
+      "stadium" : "MOR",
+      "description" : "Group B",
+      "class" : "round-group-b stadium-mor team-iran team-portugal",
+      "group" : "Group B"
    },
    {
       "team2" : "Morocco",
       "date" : "2018-06-25T18:00:00",
-      "description" : "Group B",
-      "group" : "Group B",
+      "result" : null,
       "class" : "round-group-b stadium-kal team-spain team-morocco",
-      "stadium" : "KAL",
+      "group" : "Group B",
       "team1" : "Spain",
-      "result" : null
+      "description" : "Group B",
+      "stadium" : "KAL"
    },
    {
+      "class" : "round-group-c stadium-luz team-denmark team-france",
+      "group" : "Group C",
+      "team1" : "Denmark",
+      "stadium" : "LUZ",
+      "description" : "Group C",
       "team2" : "France",
       "date" : "2018-06-26T14:00:00",
-      "description" : "Group C",
-      "group" : "Group C",
-      "class" : "round-group-c stadium-luz team-denmark team-france",
-      "stadium" : "LUZ",
-      "team1" : "Denmark",
       "result" : null
    },
    {
+      "class" : "round-group-c stadium-fis team-australia team-peru",
+      "group" : "Group C",
+      "team1" : "Australia",
+      "description" : "Group C",
+      "stadium" : "FIS",
       "team2" : "Peru",
       "date" : "2018-06-26T14:00:00",
-      "description" : "Group C",
-      "group" : "Group C",
-      "class" : "round-group-c stadium-fis team-australia team-peru",
-      "stadium" : "FIS",
-      "team1" : "Australia",
       "result" : null
    },
    {
-      "team2" : "Argentina",
       "date" : "2018-06-26T18:00:00",
-      "description" : "Group D",
+      "team2" : "Argentina",
+      "result" : null,
       "group" : "Group D",
       "class" : "round-group-d stadium-kre team-nigeria team-argentina",
       "stadium" : "KRE",
-      "team1" : "Nigeria",
-      "result" : null
+      "description" : "Group D",
+      "team1" : "Nigeria"
    },
    {
+      "class" : "round-group-d stadium-ros team-iceland team-croatia",
+      "group" : "Group D",
+      "team1" : "Iceland",
+      "stadium" : "ROS",
+      "description" : "Group D",
       "team2" : "Croatia",
       "date" : "2018-06-26T18:00:00",
-      "description" : "Group D",
-      "group" : "Group D",
-      "class" : "round-group-d stadium-ros team-iceland team-croatia",
-      "stadium" : "ROS",
-      "team1" : "Iceland",
       "result" : null
    },
    {
       "team2" : "Sweden",
       "date" : "2018-06-27T14:00:00",
-      "description" : "Group F",
-      "group" : "Group F",
+      "result" : null,
       "class" : "round-group-f stadium-cen team-mexico team-sweden",
-      "stadium" : "CEN",
+      "group" : "Group F",
       "team1" : "Mexico",
-      "result" : null
+      "stadium" : "CEN",
+      "description" : "Group F"
    },
    {
       "team2" : "Germany",
       "date" : "2018-06-27T14:00:00",
-      "description" : "Group F",
-      "group" : "Group F",
+      "result" : null,
       "class" : "round-group-f stadium-kaz team-korea-republic team-germany",
-      "stadium" : "KAZ",
+      "group" : "Group F",
       "team1" : "Korea Republic",
-      "result" : null
+      "stadium" : "KAZ",
+      "description" : "Group F"
    },
    {
       "team2" : "Brazil",
       "date" : "2018-06-27T18:00:00",
-      "description" : "Group E",
-      "group" : "Group E",
+      "result" : null,
       "class" : "round-group-e stadium-otk team-serbia team-brazil",
-      "stadium" : "OTK",
-      "team1" : "Serbia",
-      "result" : null
-   },
-   {
-      "team2" : "Costa Rica",
-      "date" : "2018-06-27T18:00:00",
-      "description" : "Group E",
       "group" : "Group E",
-      "class" : "round-group-e stadium-niz team-switzerland team-costa-rica",
-      "stadium" : "NIZ",
-      "team1" : "Switzerland",
-      "result" : null
+      "team1" : "Serbia",
+      "stadium" : "OTK",
+      "description" : "Group E"
    },
    {
+      "team1" : "Switzerland",
+      "description" : "Group E",
+      "stadium" : "NIZ",
+      "class" : "round-group-e stadium-niz team-switzerland team-costa-rica",
+      "group" : "Group E",
+      "result" : null,
+      "team2" : "Costa Rica",
+      "date" : "2018-06-27T18:00:00"
+   },
+   {
+      "result" : null,
       "team2" : "Poland",
       "date" : "2018-06-28T14:00:00",
-      "description" : "Group H",
-      "group" : "Group H",
-      "class" : "round-group-h stadium-vol team-japan team-poland",
-      "stadium" : "VOL",
       "team1" : "Japan",
-      "result" : null
+      "stadium" : "VOL",
+      "description" : "Group H",
+      "class" : "round-group-h stadium-vol team-japan team-poland",
+      "group" : "Group H"
    },
    {
-      "team2" : "Colombia",
-      "date" : "2018-06-28T14:00:00",
-      "description" : "Group H",
       "group" : "Group H",
       "class" : "round-group-h stadium-cos team-senegal team-colombia",
+      "description" : "Group H",
       "stadium" : "COS",
       "team1" : "Senegal",
+      "date" : "2018-06-28T14:00:00",
+      "team2" : "Colombia",
       "result" : null
    },
    {
-      "team2" : "Tunisia",
       "date" : "2018-06-28T18:00:00",
-      "description" : "Group G",
+      "team2" : "Tunisia",
+      "result" : null,
       "group" : "Group G",
       "class" : "round-group-g stadium-mor team-panama team-tunisia",
       "stadium" : "MOR",
-      "team1" : "Panama",
-      "result" : null
+      "description" : "Group G",
+      "team1" : "Panama"
    },
    {
-      "team2" : "Belgium",
-      "date" : "2018-06-28T18:00:00",
+      "stadium" : "KAL",
       "description" : "Group G",
+      "team1" : "England",
       "group" : "Group G",
       "class" : "round-group-g stadium-kal team-england team-belgium",
-      "stadium" : "KAL",
-      "team1" : "England",
-      "result" : null
+      "result" : null,
+      "date" : "2018-06-28T18:00:00",
+      "team2" : "Belgium"
    },
    {
       "team2" : "Argentina",
       "date" : "2018-06-30T14:00:00",
-      "description" : "Round of 16",
-      "group" : null,
+      "result" : null,
       "class" : "round-round-of-16 stadium-kaz team-france team-argentina",
-      "stadium" : "KAZ",
-      "team1" : "France",
-      "result" : null
-   },
-   {
-      "team2" : "Portugal",
-      "date" : "2018-06-30T18:00:00",
-      "description" : "Round of 16",
       "group" : null,
-      "class" : "round-round-of-16 stadium-fis team-uruguay team-portugal",
-      "stadium" : "FIS",
-      "team1" : "Uruguay",
-      "result" : null
+      "team1" : "France",
+      "description" : "Round of 16",
+      "stadium" : "KAZ"
    },
    {
-      "team2" : "Russia",
-      "date" : "2018-07-01T14:00:00",
+      "team1" : "Uruguay",
       "description" : "Round of 16",
+      "stadium" : "FIS",
+      "class" : "round-round-of-16 stadium-fis team-uruguay team-portugal",
+      "group" : null,
+      "result" : null,
+      "team2" : "Portugal",
+      "date" : "2018-06-30T18:00:00"
+   },
+   {
+      "stadium" : "LUZ",
+      "description" : "Round of 16",
+      "team1" : "Spain",
       "group" : null,
       "class" : "round-round-of-16 stadium-luz team-spain team-russia",
-      "stadium" : "LUZ",
-      "team1" : "Spain",
-      "result" : null
+      "result" : null,
+      "date" : "2018-07-01T14:00:00",
+      "team2" : "Russia"
    },
    {
-      "team2" : "Denmark",
-      "date" : "2018-07-01T18:00:00",
-      "description" : "Round of 16",
-      "group" : null,
-      "class" : "round-round-of-16 stadium-niz team-croatia team-denmark",
-      "stadium" : "NIZ",
       "team1" : "Croatia",
-      "result" : null
+      "stadium" : "NIZ",
+      "description" : "Round of 16",
+      "class" : "round-round-of-16 stadium-niz team-croatia team-denmark",
+      "group" : null,
+      "result" : null,
+      "team2" : "Denmark",
+      "date" : "2018-07-01T18:00:00"
    },
    {
+      "class" : "round-round-of-16 stadium-cos team-brazil team-mexico",
+      "group" : null,
+      "team1" : "Brazil",
+      "description" : "Round of 16",
+      "stadium" : "COS",
       "team2" : "Mexico",
       "date" : "2018-07-02T14:00:00",
-      "description" : "Round of 16",
-      "group" : null,
-      "class" : "round-round-of-16 stadium-cos team-brazil team-mexico",
-      "stadium" : "COS",
-      "team1" : "Brazil",
       "result" : null
    },
    {
-      "team2" : "Japan",
-      "date" : "2018-07-02T18:00:00",
-      "description" : "Round of 16",
-      "group" : null,
-      "class" : "round-round-of-16 stadium-ros team-belgium team-japan",
-      "stadium" : "ROS",
       "team1" : "Belgium",
-      "result" : null
+      "description" : "Round of 16",
+      "stadium" : "ROS",
+      "class" : "round-round-of-16 stadium-ros team-belgium team-japan",
+      "group" : null,
+      "result" : null,
+      "team2" : "Japan",
+      "date" : "2018-07-02T18:00:00"
    },
    {
-      "team2" : "Switzerland",
       "date" : "2018-07-03T14:00:00",
-      "description" : "Round of 16",
+      "team2" : "Switzerland",
+      "result" : null,
       "group" : null,
       "class" : "round-round-of-16 stadium-kre team-sweden team-switzerland",
       "stadium" : "KRE",
-      "team1" : "Sweden",
-      "result" : null
+      "description" : "Round of 16",
+      "team1" : "Sweden"
    },
    {
-      "team2" : "England",
       "date" : "2018-07-03T18:00:00",
-      "description" : "Round of 16",
+      "team2" : "England",
+      "result" : null,
       "group" : null,
       "class" : "round-round-of-16 stadium-otk team-colombia team-england",
       "stadium" : "OTK",
-      "team1" : "Colombia",
-      "result" : null
+      "description" : "Round of 16",
+      "team1" : "Colombia"
    },
    {
-      "team2" : "France",
+      "result" : null,
       "date" : "2018-07-06T14:00:00",
+      "team2" : "France",
       "description" : "Quarter Finals",
-      "group" : null,
-      "class" : "round-quarter-finals stadium-niz team-uruguay team-france",
       "stadium" : "NIZ",
       "team1" : "Uruguay",
-      "result" : null
+      "group" : null,
+      "class" : "round-quarter-finals stadium-niz team-uruguay team-france"
    },
    {
+      "class" : "round-quarter-finals stadium-kaz team-brazil team-belgium",
+      "group" : null,
+      "team1" : "Brazil",
+      "stadium" : "KAZ",
+      "description" : "Quarter Finals",
       "team2" : "Belgium",
       "date" : "2018-07-06T18:00:00",
-      "description" : "Quarter Finals",
-      "group" : null,
-      "class" : "round-quarter-finals stadium-kaz team-brazil team-belgium",
-      "stadium" : "KAZ",
-      "team1" : "Brazil",
       "result" : null
    },
    {
+      "class" : "round-quarter-finals stadium-cos team-sweden team-england",
+      "group" : null,
+      "team1" : "Sweden",
+      "description" : "Quarter Finals",
+      "stadium" : "COS",
       "team2" : "England",
       "date" : "2018-07-07T14:00:00",
-      "description" : "Quarter Finals",
-      "group" : null,
-      "class" : "round-quarter-finals stadium-cos team-sweden team-england",
-      "stadium" : "COS",
-      "team1" : "Sweden",
       "result" : null
    },
    {
-      "team2" : "Croatia",
-      "date" : "2018-07-07T18:00:00",
+      "stadium" : "FIS",
       "description" : "Quarter Finals",
+      "team1" : "Russia",
       "group" : null,
       "class" : "round-quarter-finals stadium-fis team-russia team-croatia",
-      "stadium" : "FIS",
-      "team1" : "Russia",
-      "result" : null
+      "result" : null,
+      "date" : "2018-07-07T18:00:00",
+      "team2" : "Croatia"
    },
    {
-      "team2" : "To be announced",
+      "result" : null,
+      "team2" : "Belgium",
       "date" : "2018-07-10T18:00:00",
-      "description" : "Semi Finals",
-      "group" : null,
-      "class" : "round-semi-finals stadium-kre team-france",
-      "stadium" : "KRE",
       "team1" : "France",
-      "result" : null
-   },
-   {
-      "team2" : "To be announced",
-      "date" : "2018-07-11T18:00:00",
       "description" : "Semi Finals",
-      "group" : null,
-      "class" : "round-semi-finals stadium-luz",
-      "stadium" : "LUZ",
-      "team1" : "To be announced",
-      "result" : null
-   },
-   {
-      "team2" : "To be announced",
-      "date" : "2018-07-14T14:00:00",
-      "description" : "Finals",
-      "group" : null,
-      "class" : "round-finals stadium-kre",
       "stadium" : "KRE",
-      "team1" : "To be announced",
-      "result" : null
+      "class" : "round-semi-finals stadium-kre team-france team-belgium",
+      "group" : null
    },
    {
+      "result" : null,
+      "date" : "2018-07-11T18:00:00",
       "team2" : "To be announced",
-      "date" : "2018-07-15T15:00:00",
-      "description" : "Finals",
-      "group" : null,
-      "class" : "round-finals stadium-luz",
       "stadium" : "LUZ",
+      "description" : "Semi Finals",
       "team1" : "To be announced",
-      "result" : null
+      "group" : null,
+      "class" : "round-semi-finals stadium-luz"
+   },
+   {
+      "team1" : "To be announced",
+      "description" : "Finals",
+      "stadium" : "KRE",
+      "class" : "round-finals stadium-kre",
+      "group" : null,
+      "result" : null,
+      "team2" : "To be announced",
+      "date" : "2018-07-14T14:00:00"
+   },
+   {
+      "result" : null,
+      "date" : "2018-07-15T15:00:00",
+      "team2" : "To be announced",
+      "stadium" : "LUZ",
+      "description" : "Finals",
+      "team1" : "To be announced",
+      "group" : null,
+      "class" : "round-finals stadium-luz"
    }
 ]
 ;
