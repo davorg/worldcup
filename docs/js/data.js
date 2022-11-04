@@ -1,4 +1,11 @@
 var stadiums = {
+   "TBA" : {
+      "city" : "",
+      "name" : "To be announced",
+      "utcoffset" : "3",
+      "timezone" : "Asia/Qatar",
+      "code" : "TBA"
+   },
    "ECS" : {
       "city" : "Al Rayyan",
       "name" : "Education City Stadium",
