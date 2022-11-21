@@ -12,6 +12,30 @@ function gameClass(now, aGame) {
   return 'future';
 }
 
+function setCookie(key, value, expiry) {
+  let expires = new Date();
+  expires.setTime(expires.getTime() + (expiry * 24 * 60 * 60 * 1000));
+  // console.log('Setting ' + key + ' to ' + value);
+  document.cookie = key + '=' + value + ';expires=' + expires.toUTCString();
+}
+
+function getCookie(key) {
+  let name = key + "=";
+  let decodedCookie = decodeURIComponent(document.cookie);
+  let ca = decodedCookie.split(';');
+  for(let i = 0; i <ca.length; i++) {
+    let c = ca[i];
+    while (c.charAt(0) == ' ') {
+      c = c.substring(1);
+    }
+    if (c.indexOf(name) == 0) {
+      // console.log('Getting ' + key + ' as ' + c.substring(name.length, c.length));
+      return c.substring(name.length, c.length);
+    }
+  }
+  return "";
+}
+
 function showHide(show) {
   if (show) {
     $('.past').show(400);
@@ -51,10 +75,14 @@ $(document).ready(function() {
     });
     $('#list').html(rendered);
     // console.log($('.past'));
-    $('.past').hide(400);
+    let showpast = getCookie('showpast') == 0 ? false : true;
+    // console.log('showpast is ' + showpast);
+    $('#showpast').prop('checked', showpast);
+    showHide(showpast);
   });
 
   $('#showpast').click(function() {
+    setCookie('showpast', (this.checked ? 1 : 0), 30);
     showHide(this.checked);
   });
 });
