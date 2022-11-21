@@ -1,6 +1,6 @@
 function gameClass(now, aGame) {
-  var gameStart = moment.tz(aGame.date, 'UTC');
-  var gameEnd   = gameStart.clone().add(105, 'minutes');
+  let gameStart = moment.tz(aGame.date, 'UTC');
+  let gameEnd   = gameStart.clone().add(105, 'minutes');
 
   if (gameEnd < now) {
     return 'past';
@@ -45,20 +45,14 @@ function showHide(show) {
 }
 
 $(document).ready(function() {
-  var now;
-  var stadium;
-  var time;
-  var template;
-  var rendered;
-  var yourtimezone;
 
-  yourtimezone = moment.tz.guess();
+  let yourtimezone = moment.tz.guess();
   $('#yourtimezone').html(yourtimezone);
-  now = moment();
+  let now = moment();
 
   for (i = 0; i < games.length; i++) {
-    stadium = stadiums[games[i].stadium];
-    time = moment.tz(games[i].date, 'UTC');
+    let stadium = stadiums[games[i].stadium];
+    let time = moment.tz(games[i].date, 'UTC');
     games[i].class = games[i].class + ' ' + gameClass(now, games[i]);
     games[i].stadium = stadium.name;
     games[i].city = stadium.city;
@@ -68,8 +62,8 @@ $(document).ready(function() {
   }
 
   $.get('templates.html', function(templates) {
-    template = $(templates).filter('#games-template').html();
-    rendered = Mustache.render(template, {
+    let template = $(templates).filter('#games-template').html();
+    let rendered = Mustache.render(template, {
       games:    games,
       stadiums: stadiums
     });
