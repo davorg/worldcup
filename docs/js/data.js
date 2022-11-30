@@ -1,710 +1,703 @@
 var stadiums = {
-   "TBA" : {
-      "city" : "",
-      "name" : "To be announced",
-      "utcoffset" : "3",
-      "timezone" : "Asia/Qatar",
-      "code" : "TBA"
-   },
-   "ECS" : {
-      "city" : "Al Rayyan",
-      "name" : "Education City Stadium",
-      "utcoffset" : "3",
-      "timezone" : "Asia/Qatar",
-      "code" : "ECS"
-   },
-   "ABS" : {
-      "code" : "ABS",
-      "city" : "Al Khor",
-      "name" : "Al Bait Stadium",
-      "utcoffset" : "3",
-      "timezone" : "Asia/Qatar"
-   },
-   "AJS" : {
-      "name" : "Al Janoub Stadium",
-      "city" : "Al Wakrah",
-      "timezone" : "Asia/Qatar",
-      "utcoffset" : "3",
-      "code" : "AJS"
-   },
-   "AAS" : {
-      "timezone" : "Asia/Qatar",
-      "utcoffset" : "3",
-      "name" : "Ahmad bin Ali Stadium",
-      "city" : "Al Rayyan",
-      "code" : "AAS"
-   },
    "974" : {
+      "name" : "Stadium 974",
       "utcoffset" : "3",
       "timezone" : "Asia/Qatar",
       "city" : "Doha",
-      "name" : "Stadium 974",
       "code" : "974"
+   },
+   "AAS" : {
+      "name" : "Ahmad bin Ali Stadium",
+      "utcoffset" : "3",
+      "code" : "AAS",
+      "timezone" : "Asia/Qatar",
+      "city" : "Al Rayyan"
    },
    "LIS" : {
       "code" : "LIS",
+      "timezone" : "Asia/Qatar",
       "city" : "Lusail",
       "name" : "Lusail Iconic Stadium",
-      "timezone" : "Asia/Qatar",
       "utcoffset" : "3"
    },
-   "KIS" : {
-      "code" : "KIS",
+   "ABS" : {
+      "code" : "ABS",
       "timezone" : "Asia/Qatar",
+      "city" : "Al Khor",
+      "utcoffset" : "3",
+      "name" : "Al Bait Stadium"
+   },
+   "KIS" : {
       "utcoffset" : "3",
       "name" : "Khalifa International Stadium",
+      "code" : "KIS",
+      "timezone" : "Asia/Qatar",
       "city" : "Al Rayyan"
    },
-   "ATS" : {
-      "city" : "Doha",
-      "name" : "Al Thumama Stadium",
+   "AJS" : {
       "utcoffset" : "3",
+      "name" : "Al Janoub Stadium",
+      "code" : "AJS",
+      "city" : "Al Wakrah",
+      "timezone" : "Asia/Qatar"
+   },
+   "ATS" : {
+      "utcoffset" : "3",
+      "name" : "Al Thumama Stadium",
+      "code" : "ATS",
+      "city" : "Doha",
+      "timezone" : "Asia/Qatar"
+   },
+   "ECS" : {
+      "utcoffset" : "3",
+      "name" : "Education City Stadium",
+      "city" : "Al Rayyan",
       "timezone" : "Asia/Qatar",
-      "code" : "ATS"
+      "code" : "ECS"
    }
 }
 ;
 
 var games = [
    {
+      "result" : null,
       "team2" : "Ecuador",
-      "description" : "Group A",
-      "date" : "2022-11-20T16:00:00",
-      "team1" : "Qatar",
       "group" : "Group A",
       "stadium" : "ABS",
+      "team1" : "Qatar",
       "class" : "round-group-a stadium-abs team-qatar team-ecuador",
-      "result" : null
+      "description" : "Group A",
+      "date" : "2022-11-20T16:00:00"
    },
    {
+      "class" : "round-group-b stadium-kis team-england team-iran",
       "description" : "Group B",
       "date" : "2022-11-21T13:00:00",
-      "team1" : "England",
       "group" : "Group B",
-      "team2" : "Iran",
-      "result" : null,
+      "team1" : "England",
       "stadium" : "KIS",
-      "class" : "round-group-b stadium-kis team-england team-iran"
+      "result" : null,
+      "team2" : "Iran"
    },
    {
       "team2" : "Netherlands",
-      "description" : "Group A",
-      "date" : "2022-11-21T16:00:00",
-      "group" : "Group A",
+      "result" : null,
       "team1" : "Senegal",
       "stadium" : "ATS",
-      "class" : "round-group-a stadium-ats team-senegal team-netherlands",
-      "result" : null
+      "group" : "Group A",
+      "date" : "2022-11-21T16:00:00",
+      "description" : "Group A",
+      "class" : "round-group-a stadium-ats team-senegal team-netherlands"
    },
    {
-      "result" : null,
-      "class" : "round-group-b stadium-aas team-usa team-wales",
-      "stadium" : "AAS",
-      "date" : "2022-11-21T19:00:00",
       "group" : "Group B",
+      "stadium" : "AAS",
       "team1" : "USA",
+      "team2" : "Wales",
+      "result" : null,
       "description" : "Group B",
-      "team2" : "Wales"
+      "class" : "round-group-b stadium-aas team-usa team-wales",
+      "date" : "2022-11-21T19:00:00"
    },
    {
-      "team1" : "Argentina",
-      "group" : "Group C",
-      "date" : "2022-11-22T10:00:00",
-      "description" : "Group C",
-      "team2" : "Saudi Arabia",
-      "result" : null,
       "class" : "round-group-c stadium-lis team-argentina team-saudi-arabia",
-      "stadium" : "LIS"
-   },
-   {
-      "team2" : "Tunisia",
-      "description" : "Group D",
-      "date" : "2022-11-22T13:00:00",
-      "team1" : "Denmark",
-      "group" : "Group D",
-      "stadium" : "ECS",
-      "class" : "round-group-d stadium-ecs team-denmark team-tunisia",
-      "result" : null
-   },
-   {
-      "stadium" : "974",
-      "class" : "round-group-c stadium-974 team-mexico team-poland",
-      "result" : null,
-      "team2" : "Poland",
       "description" : "Group C",
-      "date" : "2022-11-22T16:00:00",
+      "date" : "2022-11-22T10:00:00",
+      "result" : null,
+      "team2" : "Saudi Arabia",
       "group" : "Group C",
-      "team1" : "Mexico"
+      "stadium" : "LIS",
+      "team1" : "Argentina"
    },
    {
+      "date" : "2022-11-22T13:00:00",
+      "class" : "round-group-d stadium-ecs team-denmark team-tunisia",
+      "description" : "Group D",
+      "team1" : "Denmark",
+      "stadium" : "ECS",
+      "group" : "Group D",
+      "result" : null,
+      "team2" : "Tunisia"
+   },
+   {
+      "group" : "Group C",
+      "stadium" : "974",
+      "team1" : "Mexico",
+      "team2" : "Poland",
+      "result" : null,
+      "description" : "Group C",
+      "class" : "round-group-c stadium-974 team-mexico team-poland",
+      "date" : "2022-11-22T16:00:00"
+   },
+   {
+      "result" : null,
       "team2" : "Australia",
       "group" : "Group D",
       "team1" : "France",
-      "date" : "2022-11-22T19:00:00",
-      "description" : "Group D",
-      "class" : "round-group-d stadium-ajs team-france team-australia",
       "stadium" : "AJS",
-      "result" : null
+      "class" : "round-group-d stadium-ajs team-france team-australia",
+      "description" : "Group D",
+      "date" : "2022-11-22T19:00:00"
    },
    {
-      "team2" : "Croatia",
-      "date" : "2022-11-23T10:00:00",
-      "team1" : "Morocco",
       "group" : "Group F",
-      "description" : "Group F",
-      "class" : "round-group-f stadium-abs team-morocco team-croatia",
+      "team1" : "Morocco",
       "stadium" : "ABS",
-      "result" : null
+      "result" : null,
+      "team2" : "Croatia",
+      "class" : "round-group-f stadium-abs team-morocco team-croatia",
+      "description" : "Group F",
+      "date" : "2022-11-23T10:00:00"
    },
    {
-      "description" : "Group E",
-      "group" : "Group E",
+      "stadium" : "KIS",
       "team1" : "Germany",
-      "date" : "2022-11-23T13:00:00",
+      "group" : "Group E",
       "team2" : "Japan",
       "result" : null,
-      "stadium" : "KIS",
+      "date" : "2022-11-23T13:00:00",
+      "description" : "Group E",
       "class" : "round-group-e stadium-kis team-germany team-japan"
    },
    {
-      "team1" : "Spain",
-      "group" : "Group E",
-      "date" : "2022-11-23T16:00:00",
-      "description" : "Group E",
-      "team2" : "Costa Rica",
       "result" : null,
+      "team2" : "Costa Rica",
+      "group" : "Group E",
+      "stadium" : "ATS",
+      "team1" : "Spain",
       "class" : "round-group-e stadium-ats team-spain team-costa-rica",
-      "stadium" : "ATS"
+      "description" : "Group E",
+      "date" : "2022-11-23T16:00:00"
    },
    {
-      "result" : null,
       "stadium" : "AAS",
-      "class" : "round-group-f stadium-aas team-belgium team-canada",
-      "description" : "Group F",
       "team1" : "Belgium",
       "group" : "Group F",
+      "result" : null,
+      "team2" : "Canada",
       "date" : "2022-11-23T19:00:00",
-      "team2" : "Canada"
+      "class" : "round-group-f stadium-aas team-belgium team-canada",
+      "description" : "Group F"
    },
    {
-      "stadium" : "AJS",
-      "class" : "round-group-g stadium-ajs team-switzerland team-cameroon",
-      "result" : null,
       "team2" : "Cameroon",
-      "description" : "Group G",
-      "team1" : "Switzerland",
+      "result" : null,
       "group" : "Group G",
+      "stadium" : "AJS",
+      "team1" : "Switzerland",
+      "description" : "Group G",
+      "class" : "round-group-g stadium-ajs team-switzerland team-cameroon",
       "date" : "2022-11-24T10:00:00"
    },
    {
-      "result" : null,
-      "class" : "round-group-h stadium-ecs team-uruguay team-korea-republic",
-      "stadium" : "ECS",
-      "date" : "2022-11-24T13:00:00",
-      "group" : "Group H",
       "team1" : "Uruguay",
+      "stadium" : "ECS",
+      "group" : "Group H",
+      "team2" : "Korea Republic",
+      "result" : null,
+      "date" : "2022-11-24T13:00:00",
       "description" : "Group H",
-      "team2" : "Korea Republic"
+      "class" : "round-group-h stadium-ecs team-uruguay team-korea-republic"
    },
    {
-      "class" : "round-group-h stadium-974 team-portugal team-ghana",
-      "stadium" : "974",
       "result" : null,
       "team2" : "Ghana",
-      "date" : "2022-11-24T16:00:00",
-      "team1" : "Portugal",
       "group" : "Group H",
-      "description" : "Group H"
+      "team1" : "Portugal",
+      "stadium" : "974",
+      "class" : "round-group-h stadium-974 team-portugal team-ghana",
+      "description" : "Group H",
+      "date" : "2022-11-24T16:00:00"
    },
    {
+      "team2" : "Serbia",
+      "result" : null,
       "team1" : "Brazil",
+      "stadium" : "LIS",
       "group" : "Group G",
       "date" : "2022-11-24T19:00:00",
       "description" : "Group G",
-      "team2" : "Serbia",
-      "result" : null,
-      "class" : "round-group-g stadium-lis team-brazil team-serbia",
-      "stadium" : "LIS"
+      "class" : "round-group-g stadium-lis team-brazil team-serbia"
    },
    {
-      "team2" : "Iran",
       "description" : "Group B",
+      "class" : "round-group-b stadium-aas team-wales team-iran",
       "date" : "2022-11-25T10:00:00",
       "group" : "Group B",
       "team1" : "Wales",
       "stadium" : "AAS",
-      "class" : "round-group-b stadium-aas team-wales team-iran",
+      "team2" : "Iran",
       "result" : null
    },
    {
-      "stadium" : "ATS",
+      "date" : "2022-11-25T13:00:00",
       "class" : "round-group-a stadium-ats team-qatar team-senegal",
+      "description" : "Group A",
       "result" : null,
       "team2" : "Senegal",
-      "description" : "Group A",
       "team1" : "Qatar",
-      "group" : "Group A",
-      "date" : "2022-11-25T13:00:00"
+      "stadium" : "ATS",
+      "group" : "Group A"
    },
    {
-      "team2" : "Ecuador",
       "group" : "Group A",
-      "team1" : "Netherlands",
-      "date" : "2022-11-25T16:00:00",
-      "description" : "Group A",
-      "class" : "round-group-a stadium-kis team-netherlands team-ecuador",
       "stadium" : "KIS",
-      "result" : null
+      "team1" : "Netherlands",
+      "result" : null,
+      "team2" : "Ecuador",
+      "class" : "round-group-a stadium-kis team-netherlands team-ecuador",
+      "description" : "Group A",
+      "date" : "2022-11-25T16:00:00"
    },
    {
-      "team1" : "England",
-      "group" : "Group B",
-      "date" : "2022-11-25T19:00:00",
-      "description" : "Group B",
-      "team2" : "USA",
-      "result" : null,
       "class" : "round-group-b stadium-abs team-england team-usa",
-      "stadium" : "ABS"
+      "description" : "Group B",
+      "date" : "2022-11-25T19:00:00",
+      "group" : "Group B",
+      "team1" : "England",
+      "stadium" : "ABS",
+      "result" : null,
+      "team2" : "USA"
    },
    {
-      "stadium" : "AJS",
-      "class" : "round-group-d stadium-ajs team-tunisia team-australia",
-      "result" : null,
       "team2" : "Australia",
-      "description" : "Group D",
-      "team1" : "Tunisia",
+      "result" : null,
       "group" : "Group D",
+      "team1" : "Tunisia",
+      "stadium" : "AJS",
+      "description" : "Group D",
+      "class" : "round-group-d stadium-ajs team-tunisia team-australia",
       "date" : "2022-11-26T10:00:00"
    },
    {
-      "class" : "round-group-c stadium-ecs team-poland team-saudi-arabia",
-      "stadium" : "ECS",
-      "result" : null,
-      "team2" : "Saudi Arabia",
       "date" : "2022-11-26T13:00:00",
-      "group" : "Group C",
+      "class" : "round-group-c stadium-ecs team-poland team-saudi-arabia",
+      "description" : "Group C",
       "team1" : "Poland",
-      "description" : "Group C"
-   },
-   {
-      "team1" : "France",
-      "group" : "Group D",
-      "date" : "2022-11-26T16:00:00",
-      "description" : "Group D",
-      "team2" : "Denmark",
+      "stadium" : "ECS",
+      "group" : "Group C",
       "result" : null,
-      "class" : "round-group-d stadium-974 team-france team-denmark",
-      "stadium" : "974"
+      "team2" : "Saudi Arabia"
    },
    {
-      "stadium" : "LIS",
+      "date" : "2022-11-26T16:00:00",
+      "class" : "round-group-d stadium-974 team-france team-denmark",
+      "description" : "Group D",
+      "result" : null,
+      "team2" : "Denmark",
+      "stadium" : "974",
+      "team1" : "France",
+      "group" : "Group D"
+   },
+   {
       "class" : "round-group-c stadium-lis team-argentina team-mexico",
+      "description" : "Group C",
+      "date" : "2022-11-26T19:00:00",
       "result" : null,
       "team2" : "Mexico",
-      "description" : "Group C",
       "group" : "Group C",
-      "team1" : "Argentina",
-      "date" : "2022-11-26T19:00:00"
+      "stadium" : "LIS",
+      "team1" : "Argentina"
    },
    {
       "team2" : "Costa Rica",
-      "team1" : "Japan",
+      "result" : null,
       "group" : "Group E",
-      "date" : "2022-11-27T10:00:00",
+      "team1" : "Japan",
+      "stadium" : "AAS",
       "description" : "Group E",
       "class" : "round-group-e stadium-aas team-japan team-costa-rica",
-      "stadium" : "AAS",
+      "date" : "2022-11-27T10:00:00"
+   },
+   {
+      "description" : "Group F",
+      "class" : "round-group-f stadium-ats team-belgium team-morocco",
+      "date" : "2022-11-27T13:00:00",
+      "group" : "Group F",
+      "stadium" : "ATS",
+      "team1" : "Belgium",
+      "team2" : "Morocco",
       "result" : null
    },
    {
-      "result" : null,
-      "class" : "round-group-f stadium-ats team-belgium team-morocco",
-      "stadium" : "ATS",
-      "date" : "2022-11-27T13:00:00",
-      "group" : "Group F",
-      "team1" : "Belgium",
-      "description" : "Group F",
-      "team2" : "Morocco"
-   },
-   {
-      "description" : "Group F",
-      "group" : "Group F",
+      "stadium" : "KIS",
       "team1" : "Croatia",
-      "date" : "2022-11-27T16:00:00",
+      "group" : "Group F",
       "team2" : "Canada",
       "result" : null,
-      "stadium" : "KIS",
+      "date" : "2022-11-27T16:00:00",
+      "description" : "Group F",
       "class" : "round-group-f stadium-kis team-croatia team-canada"
    },
    {
-      "stadium" : "ABS",
       "class" : "round-group-e stadium-abs team-spain team-germany",
+      "description" : "Group E",
+      "date" : "2022-11-27T19:00:00",
       "result" : null,
       "team2" : "Germany",
-      "description" : "Group E",
-      "team1" : "Spain",
       "group" : "Group E",
-      "date" : "2022-11-27T19:00:00"
+      "stadium" : "ABS",
+      "team1" : "Spain"
    },
    {
-      "result" : null,
+      "date" : "2022-11-28T10:00:00",
       "class" : "round-group-g stadium-ajs team-cameroon team-serbia",
+      "description" : "Group G",
+      "result" : null,
+      "team2" : "Serbia",
       "stadium" : "AJS",
       "team1" : "Cameroon",
-      "group" : "Group G",
-      "date" : "2022-11-28T10:00:00",
-      "description" : "Group G",
-      "team2" : "Serbia"
+      "group" : "Group G"
    },
    {
-      "team2" : "Ghana",
-      "team1" : "Korea Republic",
-      "group" : "Group H",
-      "date" : "2022-11-28T13:00:00",
-      "description" : "Group H",
       "class" : "round-group-h stadium-ecs team-korea-republic team-ghana",
+      "description" : "Group H",
+      "date" : "2022-11-28T13:00:00",
+      "result" : null,
+      "team2" : "Ghana",
+      "group" : "Group H",
       "stadium" : "ECS",
-      "result" : null
+      "team1" : "Korea Republic"
    },
    {
-      "team1" : "Brazil",
-      "group" : "Group G",
-      "date" : "2022-11-28T16:00:00",
       "description" : "Group G",
+      "class" : "round-group-g stadium-974 team-brazil team-switzerland",
+      "date" : "2022-11-28T16:00:00",
       "team2" : "Switzerland",
       "result" : null,
-      "class" : "round-group-g stadium-974 team-brazil team-switzerland",
+      "group" : "Group G",
+      "team1" : "Brazil",
       "stadium" : "974"
    },
    {
-      "stadium" : "LIS",
+      "date" : "2022-11-28T19:00:00",
       "class" : "round-group-h stadium-lis team-portugal team-uruguay",
+      "description" : "Group H",
       "result" : null,
       "team2" : "Uruguay",
-      "description" : "Group H",
-      "group" : "Group H",
+      "stadium" : "LIS",
       "team1" : "Portugal",
-      "date" : "2022-11-28T19:00:00"
+      "group" : "Group H"
    },
    {
+      "class" : "round-group-a stadium-kis team-ecuador team-senegal",
       "description" : "Group A",
       "date" : "2022-11-29T15:00:00",
-      "group" : "Group A",
-      "team1" : "Ecuador",
+      "result" : null,
       "team2" : "Senegal",
-      "result" : null,
+      "group" : "Group A",
       "stadium" : "KIS",
-      "class" : "round-group-a stadium-kis team-ecuador team-senegal"
+      "team1" : "Ecuador"
    },
    {
       "description" : "Group A",
-      "team1" : "Netherlands",
-      "group" : "Group A",
+      "class" : "round-group-a stadium-abs team-netherlands team-qatar",
       "date" : "2022-11-29T15:00:00",
-      "team2" : "Qatar",
-      "result" : null,
+      "group" : "Group A",
       "stadium" : "ABS",
-      "class" : "round-group-a stadium-abs team-netherlands team-qatar"
+      "team1" : "Netherlands",
+      "team2" : "Qatar",
+      "result" : null
    },
    {
-      "date" : "2022-11-29T19:00:00",
-      "group" : "Group B",
-      "team1" : "Wales",
       "description" : "Group B",
+      "class" : "round-group-b stadium-aas team-wales team-england",
+      "date" : "2022-11-29T19:00:00",
       "team2" : "England",
       "result" : null,
-      "class" : "round-group-b stadium-aas team-wales team-england",
-      "stadium" : "AAS"
-   },
-   {
-      "team1" : "Iran",
       "group" : "Group B",
-      "date" : "2022-11-29T19:00:00",
-      "description" : "Group B",
-      "team2" : "USA",
-      "result" : null,
+      "stadium" : "AAS",
+      "team1" : "Wales"
+   },
+   {
       "class" : "round-group-b stadium-ats team-iran team-usa",
-      "stadium" : "ATS"
-   },
-   {
-      "class" : "round-group-d stadium-ajs team-australia team-denmark",
-      "stadium" : "AJS",
+      "description" : "Group B",
+      "date" : "2022-11-29T19:00:00",
+      "group" : "Group B",
+      "stadium" : "ATS",
+      "team1" : "Iran",
       "result" : null,
-      "team2" : "Denmark",
-      "date" : "2022-11-30T15:00:00",
-      "team1" : "Australia",
-      "group" : "Group D",
-      "description" : "Group D"
+      "team2" : "USA"
    },
    {
-      "team2" : "France",
       "date" : "2022-11-30T15:00:00",
+      "class" : "round-group-d stadium-ajs team-australia team-denmark",
+      "description" : "Group D",
+      "team1" : "Australia",
+      "stadium" : "AJS",
       "group" : "Group D",
-      "team1" : "Tunisia",
+      "result" : null,
+      "team2" : "Denmark"
+   },
+   {
+      "date" : "2022-11-30T15:00:00",
       "description" : "Group D",
       "class" : "round-group-d stadium-ecs team-tunisia team-france",
+      "team2" : "France",
+      "result" : null,
+      "team1" : "Tunisia",
       "stadium" : "ECS",
-      "result" : null
+      "group" : "Group D"
    },
    {
       "team2" : "Argentina",
-      "date" : "2022-11-30T19:00:00",
-      "team1" : "Poland",
+      "result" : null,
       "group" : "Group C",
+      "team1" : "Poland",
+      "stadium" : "974",
       "description" : "Group C",
       "class" : "round-group-c stadium-974 team-poland team-argentina",
-      "stadium" : "974",
-      "result" : null
+      "date" : "2022-11-30T19:00:00"
    },
    {
       "description" : "Group C",
+      "class" : "round-group-c stadium-lis team-saudi-arabia team-mexico",
       "date" : "2022-11-30T19:00:00",
-      "group" : "Group C",
-      "team1" : "Saudi Arabia",
       "team2" : "Mexico",
       "result" : null,
-      "stadium" : "LIS",
-      "class" : "round-group-c stadium-lis team-saudi-arabia team-mexico"
+      "group" : "Group C",
+      "team1" : "Saudi Arabia",
+      "stadium" : "LIS"
    },
    {
       "team2" : "Belgium",
-      "description" : "Group F",
+      "result" : null,
+      "stadium" : "AAS",
       "team1" : "Croatia",
       "group" : "Group F",
       "date" : "2022-12-01T15:00:00",
-      "stadium" : "AAS",
-      "class" : "round-group-f stadium-aas team-croatia team-belgium",
-      "result" : null
+      "description" : "Group F",
+      "class" : "round-group-f stadium-aas team-croatia team-belgium"
    },
    {
       "team2" : "Morocco",
-      "description" : "Group F",
-      "group" : "Group F",
-      "team1" : "Canada",
-      "date" : "2022-12-01T15:00:00",
+      "result" : null,
       "stadium" : "ATS",
-      "class" : "round-group-f stadium-ats team-canada team-morocco",
-      "result" : null
+      "team1" : "Canada",
+      "group" : "Group F",
+      "date" : "2022-12-01T15:00:00",
+      "description" : "Group F",
+      "class" : "round-group-f stadium-ats team-canada team-morocco"
    },
    {
-      "stadium" : "KIS",
-      "class" : "round-group-e stadium-kis team-japan team-spain",
-      "result" : null,
       "team2" : "Spain",
-      "description" : "Group E",
+      "result" : null,
       "team1" : "Japan",
+      "stadium" : "KIS",
       "group" : "Group E",
-      "date" : "2022-12-01T19:00:00"
+      "date" : "2022-12-01T19:00:00",
+      "description" : "Group E",
+      "class" : "round-group-e stadium-kis team-japan team-spain"
    },
    {
       "date" : "2022-12-01T19:00:00",
-      "team1" : "Costa Rica",
-      "group" : "Group E",
       "description" : "Group E",
+      "class" : "round-group-e stadium-abs team-costa-rica team-germany",
       "team2" : "Germany",
       "result" : null,
-      "class" : "round-group-e stadium-abs team-costa-rica team-germany",
-      "stadium" : "ABS"
+      "team1" : "Costa Rica",
+      "stadium" : "ABS",
+      "group" : "Group E"
    },
    {
-      "team2" : "Uruguay",
-      "date" : "2022-12-02T15:00:00",
-      "team1" : "Ghana",
-      "group" : "Group H",
       "description" : "Group H",
       "class" : "round-group-h stadium-ajs team-ghana team-uruguay",
-      "stadium" : "AJS",
-      "result" : null
-   },
-   {
-      "team2" : "Portugal",
-      "description" : "Group H",
       "date" : "2022-12-02T15:00:00",
-      "team1" : "Korea Republic",
+      "team2" : "Uruguay",
+      "result" : null,
       "group" : "Group H",
-      "stadium" : "ECS",
-      "class" : "round-group-h stadium-ecs team-korea-republic team-portugal",
-      "result" : null
+      "stadium" : "AJS",
+      "team1" : "Ghana"
    },
    {
-      "description" : "Group G",
-      "group" : "Group G",
-      "team1" : "Serbia",
-      "date" : "2022-12-02T19:00:00",
+      "date" : "2022-12-02T15:00:00",
+      "class" : "round-group-h stadium-ecs team-korea-republic team-portugal",
+      "description" : "Group H",
+      "result" : null,
+      "team2" : "Portugal",
+      "team1" : "Korea Republic",
+      "stadium" : "ECS",
+      "group" : "Group H"
+   },
+   {
       "team2" : "Switzerland",
       "result" : null,
+      "group" : "Group G",
       "stadium" : "974",
-      "class" : "round-group-g stadium-974 team-serbia team-switzerland"
+      "team1" : "Serbia",
+      "description" : "Group G",
+      "class" : "round-group-g stadium-974 team-serbia team-switzerland",
+      "date" : "2022-12-02T19:00:00"
    },
    {
-      "description" : "Group G",
-      "date" : "2022-12-02T19:00:00",
-      "group" : "Group G",
-      "team1" : "Cameroon",
       "team2" : "Brazil",
       "result" : null,
+      "team1" : "Cameroon",
       "stadium" : "LIS",
+      "group" : "Group G",
+      "date" : "2022-12-02T19:00:00",
+      "description" : "Group G",
       "class" : "round-group-g stadium-lis team-cameroon team-brazil"
    },
    {
-      "team2" : "2B",
       "date" : "2022-12-03T15:00:00",
-      "group" : null,
-      "team1" : "1A",
+      "class" : "round-round-of-16 stadium-kis team-netherlands team-united-states",
       "description" : "Round of 16",
-      "class" : "round-round-of-16 stadium-tba team-1a team-2b",
-      "stadium" : "TBA",
-      "result" : null
+      "result" : null,
+      "team2" : "United States",
+      "stadium" : "KIS",
+      "team1" : "Netherlands",
+      "group" : null
    },
    {
       "team2" : "2D",
-      "date" : "2022-12-03T19:00:00",
-      "team1" : "1C",
-      "group" : null,
-      "description" : "Round of 16",
-      "class" : "round-round-of-16 stadium-tba team-1c team-2d",
-      "stadium" : "TBA",
-      "result" : null
-   },
-   {
-      "team2" : "2C",
-      "description" : "Round of 16",
-      "team1" : "1D",
-      "group" : null,
-      "date" : "2022-12-04T15:00:00",
-      "stadium" : "TBA",
-      "class" : "round-round-of-16 stadium-tba team-1d team-2c",
-      "result" : null
-   },
-   {
       "result" : null,
-      "stadium" : "TBA",
-      "class" : "round-round-of-16 stadium-tba team-1b team-2a",
+      "team1" : "1C",
+      "stadium" : "AAS",
+      "group" : null,
+      "date" : "2022-12-03T19:00:00",
+      "description" : "Round of 16",
+      "class" : "round-round-of-16 stadium-aas team-1c team-2d"
+   },
+   {
+      "class" : "round-round-of-16 stadium-ats team-1d team-2c",
+      "description" : "Round of 16",
+      "date" : "2022-12-04T15:00:00",
+      "result" : null,
+      "team2" : "2C",
+      "group" : null,
+      "stadium" : "ATS",
+      "team1" : "1D"
+   },
+   {
+      "class" : "round-round-of-16 stadium-abs team-england team-senegal",
       "description" : "Round of 16",
       "date" : "2022-12-04T19:00:00",
       "group" : null,
-      "team1" : "1B",
-      "team2" : "2A"
+      "stadium" : "ABS",
+      "team1" : "England",
+      "result" : null,
+      "team2" : "Senegal"
    },
    {
-      "team2" : "2F",
       "description" : "Round of 16",
-      "team1" : "1E",
-      "group" : null,
+      "class" : "round-round-of-16 stadium-ajs team-1e team-2f",
       "date" : "2022-12-05T15:00:00",
-      "stadium" : "TBA",
-      "class" : "round-round-of-16 stadium-tba team-1e team-2f",
+      "group" : null,
+      "team1" : "1E",
+      "stadium" : "AJS",
+      "team2" : "2F",
       "result" : null
    },
    {
-      "description" : "Round of 16",
-      "date" : "2022-12-05T19:00:00",
-      "team1" : "1G",
-      "group" : null,
       "team2" : "2H",
       "result" : null,
-      "stadium" : "TBA",
-      "class" : "round-round-of-16 stadium-tba team-1g team-2h"
+      "group" : null,
+      "stadium" : "974",
+      "team1" : "1G",
+      "description" : "Round of 16",
+      "class" : "round-round-of-16 stadium-974 team-1g team-2h",
+      "date" : "2022-12-05T19:00:00"
    },
    {
-      "result" : null,
-      "class" : "round-round-of-16 stadium-tba team-1f team-2e",
-      "stadium" : "TBA",
-      "team1" : "1F",
-      "group" : null,
       "date" : "2022-12-06T15:00:00",
+      "class" : "round-round-of-16 stadium-ecs team-1f team-2e",
       "description" : "Round of 16",
+      "team1" : "1F",
+      "stadium" : "ECS",
+      "group" : null,
+      "result" : null,
       "team2" : "2E"
    },
    {
-      "date" : "2022-12-06T19:00:00",
-      "team1" : "1H",
-      "group" : null,
       "description" : "Round of 16",
+      "class" : "round-round-of-16 stadium-lis team-1h team-2g",
+      "date" : "2022-12-06T19:00:00",
+      "group" : null,
+      "team1" : "1H",
+      "stadium" : "LIS",
       "team2" : "2G",
-      "result" : null,
-      "class" : "round-round-of-16 stadium-tba team-1h team-2g",
-      "stadium" : "TBA"
+      "result" : null
    },
    {
-      "stadium" : "TBA",
-      "class" : "round-quarter-finals stadium-tba team-tba team-tba",
+      "date" : "2022-12-09T15:00:00",
+      "class" : "round-quarter-finals stadium-ecs team-tba team-tba",
+      "description" : "Quarter Finals",
       "result" : null,
       "team2" : "TBA",
-      "description" : "Quarter Finals",
-      "date" : "2022-12-09T15:00:00",
-      "group" : null,
-      "team1" : "TBA"
+      "team1" : "TBA",
+      "stadium" : "ECS",
+      "group" : null
    },
    {
-      "result" : null,
-      "class" : "round-quarter-finals stadium-tba team-tba team-tba",
-      "stadium" : "TBA",
       "date" : "2022-12-09T19:00:00",
-      "group" : null,
-      "team1" : "TBA",
+      "class" : "round-quarter-finals stadium-lis team-tba team-tba",
       "description" : "Quarter Finals",
+      "team1" : "TBA",
+      "stadium" : "LIS",
+      "group" : null,
+      "result" : null,
       "team2" : "TBA"
    },
    {
-      "team2" : "TBA",
+      "class" : "round-quarter-finals stadium-ats team-tba team-tba",
       "description" : "Quarter Finals",
-      "group" : null,
-      "team1" : "TBA",
       "date" : "2022-12-10T15:00:00",
-      "stadium" : "TBA",
-      "class" : "round-quarter-finals stadium-tba team-tba team-tba",
-      "result" : null
+      "group" : null,
+      "stadium" : "ATS",
+      "team1" : "TBA",
+      "result" : null,
+      "team2" : "TBA"
    },
    {
+      "stadium" : "ABS",
+      "team1" : "TBA",
+      "group" : null,
       "team2" : "TBA",
+      "result" : null,
       "date" : "2022-12-10T19:00:00",
-      "group" : null,
-      "team1" : "TBA",
       "description" : "Quarter Finals",
-      "class" : "round-quarter-finals stadium-tba team-tba team-tba",
-      "stadium" : "TBA",
-      "result" : null
+      "class" : "round-quarter-finals stadium-abs team-tba team-tba"
    },
    {
-      "team2" : "TBA",
+      "description" : "Semi Finals",
+      "class" : "round-semi-finals stadium-lis team-tba team-tba",
       "date" : "2022-12-13T19:00:00",
+      "team2" : "TBA",
+      "result" : null,
       "group" : null,
       "team1" : "TBA",
-      "description" : "Semi Finals",
-      "class" : "round-semi-finals stadium-tba team-tba team-tba",
-      "stadium" : "TBA",
-      "result" : null
+      "stadium" : "LIS"
    },
    {
       "description" : "Semi Finals",
-      "team1" : "TBA",
-      "group" : null,
+      "class" : "round-semi-finals stadium-abs team-tba team-tba",
       "date" : "2022-12-14T19:00:00",
-      "team2" : "TBA",
-      "result" : null,
-      "stadium" : "TBA",
-      "class" : "round-semi-finals stadium-tba team-tba team-tba"
-   },
-   {
-      "stadium" : "TBA",
-      "class" : "round-finals stadium-tba team-tba team-tba",
-      "result" : null,
-      "team2" : "TBA",
-      "description" : "Finals",
       "group" : null,
       "team1" : "TBA",
-      "date" : "2022-12-17T15:00:00"
-   },
-   {
+      "stadium" : "ABS",
       "team2" : "TBA",
-      "date" : "2022-12-18T15:00:00",
-      "group" : null,
-      "team1" : "TBA",
-      "description" : "Finals",
-      "class" : "round-finals stadium-tba team-tba team-tba",
-      "stadium" : "TBA",
       "result" : null
+   },
+   {
+      "description" : "Finals",
+      "class" : "round-finals stadium-kis team-tba team-tba",
+      "date" : "2022-12-17T15:00:00",
+      "group" : null,
+      "team1" : "TBA",
+      "stadium" : "KIS",
+      "team2" : "TBA",
+      "result" : null
+   },
+   {
+      "date" : "2022-12-18T15:00:00",
+      "description" : "Finals",
+      "class" : "round-finals stadium-lis team-tba team-tba",
+      "team2" : "TBA",
+      "result" : null,
+      "team1" : "TBA",
+      "stadium" : "LIS",
+      "group" : null
    }
 ]
 ;
