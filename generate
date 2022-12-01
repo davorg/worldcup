@@ -7,7 +7,7 @@ use feature 'say';
 use Time::Piece;
 use JSON;
 
-my $json = JSON->new->pretty->utf8;
+my $json = JSON->new->pretty->utf8->canonical;
 
 open my $d_fh, '>', 'docs/js/data.js' or die "$!";
 
