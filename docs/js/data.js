@@ -580,14 +580,14 @@ var games = [
       "team2" : "Senegal"
    },
    {
-      "class" : "round-round-of-16 stadium-ajs team-1e team-2f",
+      "class" : "round-round-of-16 stadium-ajs team-japan team-croatia",
       "date" : "2022-12-05T15:00:00",
       "description" : "Round of 16",
       "group" : null,
       "result" : null,
       "stadium" : "AJS",
-      "team1" : "1E",
-      "team2" : "2F"
+      "team1" : "Japan",
+      "team2" : "Croatia"
    },
    {
       "class" : "round-round-of-16 stadium-974 team-1g team-2h",
@@ -600,14 +600,14 @@ var games = [
       "team2" : "2H"
    },
    {
-      "class" : "round-round-of-16 stadium-ecs team-1f team-2e",
+      "class" : "round-round-of-16 stadium-ecs team-morocco team-spain",
       "date" : "2022-12-06T15:00:00",
       "description" : "Round of 16",
       "group" : null,
       "result" : null,
       "stadium" : "ECS",
-      "team1" : "1F",
-      "team2" : "2E"
+      "team1" : "Morocco",
+      "team2" : "Spain"
    },
    {
       "class" : "round-round-of-16 stadium-lis team-1h team-2g",
