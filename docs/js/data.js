@@ -590,14 +590,14 @@ var games = [
       "team2" : "Croatia"
    },
    {
-      "class" : "round-round-of-16 stadium-974 team-1g team-2h",
+      "class" : "round-round-of-16 stadium-974 team-brazil team-soun-korea",
       "date" : "2022-12-05T19:00:00",
       "description" : "Round of 16",
       "group" : null,
       "result" : null,
       "stadium" : "974",
-      "team1" : "1G",
-      "team2" : "2H"
+      "team1" : "Brazil",
+      "team2" : "Soun Korea"
    },
    {
       "class" : "round-round-of-16 stadium-ecs team-morocco team-spain",
@@ -610,14 +610,14 @@ var games = [
       "team2" : "Spain"
    },
    {
-      "class" : "round-round-of-16 stadium-lis team-1h team-2g",
+      "class" : "round-round-of-16 stadium-lis team-portugal team-switzerland",
       "date" : "2022-12-06T19:00:00",
       "description" : "Round of 16",
       "group" : null,
       "result" : null,
       "stadium" : "LIS",
-      "team1" : "1H",
-      "team2" : "2G"
+      "team1" : "Portugal",
+      "team2" : "Switzerland"
    },
    {
       "class" : "round-quarter-finals stadium-ecs team-tba team-tba",
