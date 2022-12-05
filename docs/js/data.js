@@ -650,14 +650,14 @@ var games = [
       "team2" : "TBA"
    },
    {
-      "class" : "round-quarter-finals stadium-abs team-tba team-tba",
+      "class" : "round-quarter-finals stadium-abs team-england team-france",
       "date" : "2022-12-10T19:00:00",
       "description" : "Quarter Finals",
       "group" : null,
       "result" : null,
       "stadium" : "ABS",
-      "team1" : "TBA",
-      "team2" : "TBA"
+      "team1" : "England",
+      "team2" : "France"
    },
    {
       "class" : "round-semi-finals stadium-lis team-tba team-tba",
