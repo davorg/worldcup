@@ -590,14 +590,14 @@ var games = [
       "team2" : "Croatia"
    },
    {
-      "class" : "round-round-of-16 stadium-974 team-brazil team-soun-korea",
+      "class" : "round-round-of-16 stadium-974 team-brazil team-south-korea",
       "date" : "2022-12-05T19:00:00",
       "description" : "Round of 16",
       "group" : null,
       "result" : null,
       "stadium" : "974",
       "team1" : "Brazil",
-      "team2" : "Soun Korea"
+      "team2" : "South Korea"
    },
    {
       "class" : "round-round-of-16 stadium-ecs team-morocco team-spain",
