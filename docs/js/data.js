@@ -620,14 +620,14 @@ var games = [
       "team2" : "Switzerland"
    },
    {
-      "class" : "round-quarter-finals stadium-ecs team-tba team-tba",
+      "class" : "round-quarter-finals stadium-ecs team-croatia team-brazil",
       "date" : "2022-12-09T15:00:00",
       "description" : "Quarter Finals",
       "group" : null,
       "result" : null,
       "stadium" : "ECS",
-      "team1" : "TBA",
-      "team2" : "TBA"
+      "team1" : "Croatia",
+      "team2" : "Brazil"
    },
    {
       "class" : "round-quarter-finals stadium-lis team-netherlands team-argentina",
