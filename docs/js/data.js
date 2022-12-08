@@ -640,14 +640,14 @@ var games = [
       "team2" : "Argentina"
    },
    {
-      "class" : "round-quarter-finals stadium-ats team-tba team-tba",
+      "class" : "round-quarter-finals stadium-ats team-morocco team-portugal",
       "date" : "2022-12-10T15:00:00",
       "description" : "Quarter Finals",
       "group" : null,
       "result" : null,
       "stadium" : "ATS",
-      "team1" : "TBA",
-      "team2" : "TBA"
+      "team1" : "Morocco",
+      "team2" : "Portugal"
    },
    {
       "class" : "round-quarter-finals stadium-abs team-england team-france",
