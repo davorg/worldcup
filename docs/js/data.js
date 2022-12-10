@@ -670,13 +670,13 @@ var games = [
       "team2" : "Croatia"
    },
    {
-      "class" : "round-semi-finals stadium-abs team-england-or-france team-morocco",
+      "class" : "round-semi-finals stadium-abs team-france team-morocco",
       "date" : "2022-12-14T19:00:00",
       "description" : "Semi Finals",
       "group" : null,
       "result" : null,
       "stadium" : "ABS",
-      "team1" : "England or France",
+      "team1" : "France",
       "team2" : "Morocco"
    },
    {
