@@ -680,24 +680,24 @@ var games = [
       "team2" : "Morocco"
    },
    {
-      "class" : "round-finals stadium-kis team-croatia team-tba",
+      "class" : "round-finals stadium-kis team-croatia team-morocco",
       "date" : "2022-12-17T15:00:00",
       "description" : "Finals",
       "group" : null,
       "result" : null,
       "stadium" : "KIS",
       "team1" : "Croatia",
-      "team2" : "TBA"
+      "team2" : "Morocco"
    },
    {
-      "class" : "round-finals stadium-lis team-argentina team-tba",
+      "class" : "round-finals stadium-lis team-argentina team-france",
       "date" : "2022-12-18T15:00:00",
       "description" : "Finals",
       "group" : null,
       "result" : null,
       "stadium" : "LIS",
       "team1" : "Argentina",
-      "team2" : "TBA"
+      "team2" : "France"
    }
 ]
 ;
