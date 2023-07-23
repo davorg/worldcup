@@ -38,7 +38,7 @@ var stadiums = {
       "city" : "Melbourne",
       "code" : "MEL",
       "name" : "Melbourne Rectangular Stadium",
-      "timezone" : "Ausralia/Melbourne",
+      "timezone" : "Australia/Melbourne",
       "utcoffset" : "10"
    },
    "PER" : {
@@ -56,11 +56,11 @@ var stadiums = {
       "utcoffset" : "10"
    },
    "WAI" : {
-      "city" : "12",
+      "city" : "Hamilton",
       "code" : "WAI",
       "name" : "Waikato Stadium",
-      "timezone" : null,
-      "utcoffset" : "Pacific/Auckland"
+      "timezone" : "Pacific/Auckland",
+      "utcoffset" : "12"
    },
    "WEL" : {
       "city" : "Wellington",
@@ -84,6 +84,26 @@ var games = [
       "team2" : "Norway"
    },
    {
+      "class" : "round-group-b stadium-aus team-australia team-republic-of-ireland",
+      "date" : "2023-07-20T20:00:00",
+      "description" : "Group B",
+      "group" : "Group B",
+      "result" : null,
+      "stadium" : "AUS",
+      "team1" : "Australia",
+      "team2" : "Republic of Ireland"
+   },
+   {
+      "class" : "round-group-b stadium-mel team-nigeria team-canada",
+      "date" : "2023-07-21T12:30:00",
+      "description" : "Group B",
+      "group" : "Group B",
+      "result" : null,
+      "stadium" : "MEL",
+      "team1" : "Nigeria",
+      "team2" : "Canada"
+   },
+   {
       "class" : "round-group-a stadium-for team-phillippines team-switzerland",
       "date" : "2023-07-21T17:00:00",
       "description" : "Group A",
@@ -92,6 +112,126 @@ var games = [
       "stadium" : "FOR",
       "team1" : "Phillippines",
       "team2" : "Switzerland"
+   },
+   {
+      "class" : "round-group-c stadium-wel team-spain team-costa-rica",
+      "date" : "2023-07-21T19:30:00",
+      "description" : "Group C",
+      "group" : "Group C",
+      "result" : null,
+      "stadium" : "WEL",
+      "team1" : "Spain",
+      "team2" : "Costa Rica"
+   },
+   {
+      "class" : "round-group-e stadium-ede team-united-states team-vietnam",
+      "date" : "2023-07-22T13:00:00",
+      "description" : "Group E",
+      "group" : "Group E",
+      "result" : null,
+      "stadium" : "EDE",
+      "team1" : "United States",
+      "team2" : "Vietnam"
+   },
+   {
+      "class" : "round-group-c stadium-wai team-zambia team-japan",
+      "date" : "2023-07-22T19:00:00",
+      "description" : "Group C",
+      "group" : "Group C",
+      "result" : null,
+      "stadium" : "WAI",
+      "team1" : "Zambia",
+      "team2" : "Japan"
+   },
+   {
+      "class" : "round-group-d stadium-lp team-england team-haiti",
+      "date" : "2023-07-22T19:30:00",
+      "description" : "Group D",
+      "group" : "Group D",
+      "result" : null,
+      "stadium" : "LP",
+      "team1" : "England",
+      "team2" : "Haiti"
+   },
+   {
+      "class" : "round-group-e stadium-for team-netherlands team-portugual",
+      "date" : "2023-07-22T19:30:00",
+      "description" : "Group E",
+      "group" : "Group E",
+      "result" : null,
+      "stadium" : "FOR",
+      "team1" : "Netherlands",
+      "team2" : "Portugual"
+   },
+   {
+      "class" : "round-group-d stadium-per team-denmark team-china",
+      "date" : "2023-07-22T20:00:00",
+      "description" : "Group D",
+      "group" : "Group D",
+      "result" : null,
+      "stadium" : "PER",
+      "team1" : "Denmark",
+      "team2" : "China"
+   },
+   {
+      "class" : "round-group-g stadium-wel team-sweden team-south-africa",
+      "date" : "2023-07-23T17:00:00",
+      "description" : "Group G",
+      "group" : "Group G",
+      "result" : null,
+      "stadium" : "WEL",
+      "team1" : "Sweden",
+      "team2" : "South Africa"
+   },
+   {
+      "class" : "round-group-f stadium-syd team-france team-jamaica",
+      "date" : "2023-07-23T20:00:00",
+      "description" : "Group F",
+      "group" : "Group F",
+      "result" : null,
+      "stadium" : "SYD",
+      "team1" : "France",
+      "team2" : "Jamaica"
+   },
+   {
+      "class" : "round-group-g stadium-ede team-italy team-argentina",
+      "date" : "2023-07-24T18:00:00",
+      "description" : "Group G",
+      "group" : "Group G",
+      "result" : null,
+      "stadium" : "EDE",
+      "team1" : "Italy",
+      "team2" : "Argentina"
+   },
+   {
+      "class" : "round-group-h stadium-mel team-germany team-morocco",
+      "date" : "2023-07-24T18:30:00",
+      "description" : "Group H",
+      "group" : "Group H",
+      "result" : null,
+      "stadium" : "MEL",
+      "team1" : "Germany",
+      "team2" : "Morocco"
+   },
+   {
+      "class" : "round-group-f stadium-hin team-brazil team-panama",
+      "date" : "2023-07-24T20:30:00",
+      "description" : "Group F",
+      "group" : "Group F",
+      "result" : null,
+      "stadium" : "HIN",
+      "team1" : "Brazil",
+      "team2" : "Panama"
+   },
+   {
+      "class" : "round-group-h stadium-syd team-columbia team-south-korea",
+      "date" : "2023-07-25T12:00:00",
+      "description" : "Group H",
+      "group" : "Group H",
+      "result" : null,
+      "stadium" : "SYD",
+      "team1" : "Columbia",
+      "team2" : "South Korea"
    },
    {
       "class" : "round-group-a stadium-wel team-new-zealand team-phillipines",
@@ -114,106 +254,6 @@ var games = [
       "team2" : "Norway"
    },
    {
-      "class" : "round-group-a stadium-for team-switzerland team-new-zealand",
-      "date" : "2023-07-30T19:00:00",
-      "description" : "Group A",
-      "group" : "Group A",
-      "result" : null,
-      "stadium" : "FOR",
-      "team1" : "Switzerland",
-      "team2" : "New Zealand"
-   },
-   {
-      "class" : "round-group-a stadium-ede team-norway team-phillipines",
-      "date" : "2023-07-30T19:00:00",
-      "description" : "Group A",
-      "group" : "Group A",
-      "result" : null,
-      "stadium" : "EDE",
-      "team1" : "Norway",
-      "team2" : "Phillipines"
-   },
-   {
-      "class" : "round-group-b stadium-aus team-australia team-republic-of-ireland",
-      "date" : "2023-07-20T20:00:00",
-      "description" : "Group B",
-      "group" : "Group B",
-      "result" : null,
-      "stadium" : "AUS",
-      "team1" : "Australia",
-      "team2" : "Republic of Ireland"
-   },
-   {
-      "class" : "round-group-b stadium-mel team-nigeria team-canada",
-      "date" : "2023-07-21T12:30:00",
-      "description" : "Group B",
-      "group" : "Group B",
-      "result" : null,
-      "stadium" : "MEL",
-      "team1" : "Nigeria",
-      "team2" : "Canada"
-   },
-   {
-      "class" : "round-group-b stadium-per team-canada team-republic-of-ireland",
-      "date" : "2023-07-26T20:00:00",
-      "description" : "Group B",
-      "group" : "Group B",
-      "result" : null,
-      "stadium" : "PER",
-      "team1" : "Canada",
-      "team2" : "Republic of Ireland"
-   },
-   {
-      "class" : "round-group-b stadium-lan team-australia team-nigeria",
-      "date" : "2023-07-27T20:00:00",
-      "description" : "Group B",
-      "group" : "Group B",
-      "result" : null,
-      "stadium" : "LAN",
-      "team1" : "Australia",
-      "team2" : "Nigeria"
-   },
-   {
-      "class" : "round-group-b stadium-mel team-canada team-australia",
-      "date" : "2023-07-31T20:00:00",
-      "description" : "Group B",
-      "group" : "Group B",
-      "result" : null,
-      "stadium" : "MEL",
-      "team1" : "Canada",
-      "team2" : "Australia"
-   },
-   {
-      "class" : "round-group-b stadium-lan team-republic-of-ireland team-nigeria",
-      "date" : "2023-07-31T20:00:00",
-      "description" : "Group B",
-      "group" : "Group B",
-      "result" : null,
-      "stadium" : "LAN",
-      "team1" : "Republic of Ireland",
-      "team2" : "Nigeria"
-   },
-   {
-      "class" : "round-group-c stadium-wel team-spain team-costa-rica",
-      "date" : "2023-07-21T19:30:00",
-      "description" : "Group C",
-      "group" : "Group C",
-      "result" : null,
-      "stadium" : "WEL",
-      "team1" : "Spain",
-      "team2" : "Costa Rica"
-   },
-   {
-      "class" : "round-group-c stadium-wai team-zambia team-japan",
-      "date" : "2023-07-22T19:00:00",
-      "description" : "Group C",
-      "group" : "Group C",
-      "result" : null,
-      "stadium" : "WAI",
-      "team1" : "Zambia",
-      "team2" : "Japan"
-   },
-   {
       "class" : "round-group-c stadium-for team-japan team-costa-rica",
       "date" : "2023-07-26T17:00:00",
       "description" : "Group C",
@@ -224,114 +264,24 @@ var games = [
       "team2" : "Costa Rica"
    },
    {
-      "class" : "round-group-c stadium-lis team-spain team-zambia",
+      "class" : "round-group-c stadium-ede team-spain team-zambia",
       "date" : "2023-07-26T19:30:00",
       "description" : "Group C",
       "group" : "Group C",
       "result" : null,
-      "stadium" : "LIS",
+      "stadium" : "EDE",
       "team1" : "Spain",
       "team2" : "Zambia"
    },
    {
-      "class" : "round-group-c stadium-wel team-japan team-spain",
-      "date" : "2023-07-31T19:00:00",
-      "description" : "Group C",
-      "group" : "Group C",
-      "result" : null,
-      "stadium" : "WEL",
-      "team1" : "Japan",
-      "team2" : "Spain"
-   },
-   {
-      "class" : "round-group-c stadium-wai team-costa-rica team-zambia",
-      "date" : "2023-07-31T19:00:00",
-      "description" : "Group C",
-      "group" : "Group C",
-      "result" : null,
-      "stadium" : "WAI",
-      "team1" : "Costa Rica",
-      "team2" : "Zambia"
-   },
-   {
-      "class" : "round-group-d stadium-lan team-england team-haiti",
-      "date" : "2023-07-22T19:30:00",
-      "description" : "Group D",
-      "group" : "Group D",
-      "result" : null,
-      "stadium" : "LAN",
-      "team1" : "England",
-      "team2" : "Haiti"
-   },
-   {
-      "class" : "round-group-d stadium-per team-denmark team-china",
-      "date" : "2023-07-22T20:00:00",
-      "description" : "Group D",
-      "group" : "Group D",
+      "class" : "round-group-b stadium-per team-canada team-republic-of-ireland",
+      "date" : "2023-07-26T20:00:00",
+      "description" : "Group B",
+      "group" : "Group B",
       "result" : null,
       "stadium" : "PER",
-      "team1" : "Denmark",
-      "team2" : "China"
-   },
-   {
-      "class" : "round-group-d stadium-syd team-england team-denmark",
-      "date" : "2023-07-28T18:30:00",
-      "description" : "Group D",
-      "group" : "Group D",
-      "result" : null,
-      "stadium" : "SYD",
-      "team1" : "England",
-      "team2" : "Denmark"
-   },
-   {
-      "class" : "round-group-d stadium-hin team-china team-haiti",
-      "date" : "2023-07-28T20:30:00",
-      "description" : "Group D",
-      "group" : "Group D",
-      "result" : null,
-      "stadium" : "HIN",
-      "team1" : "China",
-      "team2" : "Haiti"
-   },
-   {
-      "class" : "round-group-d stadium-hin team-china team-england",
-      "date" : "2023-08-01T20:30:00",
-      "description" : "Group D",
-      "group" : "Group D",
-      "result" : null,
-      "stadium" : "HIN",
-      "team1" : "China",
-      "team2" : "England"
-   },
-   {
-      "class" : "round-group-d stadium-per team-haiti team-denmark",
-      "date" : "2023-08-01T19:00:00",
-      "description" : "Group D",
-      "group" : "Group D",
-      "result" : null,
-      "stadium" : "PER",
-      "team1" : "Haiti",
-      "team2" : "Denmark"
-   },
-   {
-      "class" : "round-group-e stadium-ede team-united-states team-vietnam",
-      "date" : "2023-07-22T13:00:00",
-      "description" : "Group E",
-      "group" : "Group E",
-      "result" : null,
-      "stadium" : "EDE",
-      "team1" : "United States",
-      "team2" : "Vietnam"
-   },
-   {
-      "class" : "round-group-e stadium-for team-netherlands team-portugual",
-      "date" : "2023-07-22T19:30:00",
-      "description" : "Group E",
-      "group" : "Group E",
-      "result" : null,
-      "stadium" : "FOR",
-      "team1" : "Netherlands",
-      "team2" : "Portugual"
+      "team1" : "Canada",
+      "team2" : "Republic of Ireland"
    },
    {
       "class" : "round-group-e stadium-wel team-united-states team-netherlands",
@@ -354,44 +304,54 @@ var games = [
       "team2" : "Vietnam"
    },
    {
-      "class" : "round-group-e stadium-ede team-portugual team-united-states",
-      "date" : "2023-08-01T19:00:00",
-      "description" : "Group E",
-      "group" : "Group E",
+      "class" : "round-group-b stadium-lp team-australia team-nigeria",
+      "date" : "2023-07-27T20:00:00",
+      "description" : "Group B",
+      "group" : "Group B",
       "result" : null,
-      "stadium" : "EDE",
-      "team1" : "Portugual",
-      "team2" : "United States"
+      "stadium" : "LP",
+      "team1" : "Australia",
+      "team2" : "Nigeria"
    },
    {
-      "class" : "round-group-e stadium-for team-vietnam team-netherlands",
-      "date" : "2023-08-01T19:00:00",
-      "description" : "Group E",
-      "group" : "Group E",
+      "class" : "round-group-g stadium-for team-argentina team-south-africa",
+      "date" : "2023-07-28T12:00:00",
+      "description" : "Group G",
+      "group" : "Group G",
       "result" : null,
       "stadium" : "FOR",
-      "team1" : "Vietnam",
-      "team2" : "Netherlands"
+      "team1" : "Argentina",
+      "team2" : "South Africa"
    },
    {
-      "class" : "round-group-f stadium-syd team-france team-jamaica",
-      "date" : "2023-07-23T20:00:00",
-      "description" : "Group F",
-      "group" : "Group F",
+      "class" : "round-group-d stadium-syd team-england team-denmark",
+      "date" : "2023-07-28T18:30:00",
+      "description" : "Group D",
+      "group" : "Group D",
       "result" : null,
       "stadium" : "SYD",
-      "team1" : "France",
-      "team2" : "Jamaica"
+      "team1" : "England",
+      "team2" : "Denmark"
    },
    {
-      "class" : "round-group-f stadium-hin team-brazil team-panama",
-      "date" : "2023-07-24T20:30:00",
-      "description" : "Group F",
-      "group" : "Group F",
+      "class" : "round-group-d stadium-hin team-china team-haiti",
+      "date" : "2023-07-28T20:30:00",
+      "description" : "Group D",
+      "group" : "Group D",
       "result" : null,
       "stadium" : "HIN",
-      "team1" : "Brazil",
-      "team2" : "Panama"
+      "team1" : "China",
+      "team2" : "Haiti"
+   },
+   {
+      "class" : "round-group-g stadium-wel team-sweden team-italy",
+      "date" : "2023-07-29T19:30:00",
+      "description" : "Group G",
+      "group" : "Group G",
+      "result" : null,
+      "stadium" : "WEL",
+      "team1" : "Sweden",
+      "team2" : "Italy"
    },
    {
       "class" : "round-group-f stadium-lp team-france team-brazil",
@@ -414,64 +374,124 @@ var games = [
       "team2" : "Jamaica"
    },
    {
-      "class" : "round-group-f stadium-syd team-panama team-france",
-      "date" : "2023-08-02T20:00:00",
-      "description" : "Group F",
-      "group" : "Group F",
+      "class" : "round-group-h stadium-hin team-south-koria team-morocco",
+      "date" : "2023-07-30T14:00:00",
+      "description" : "Group H",
+      "group" : "Group H",
       "result" : null,
-      "stadium" : "SYD",
-      "team1" : "Panama",
-      "team2" : "France"
+      "stadium" : "HIN",
+      "team1" : "South Koria",
+      "team2" : "Morocco"
    },
    {
-      "class" : "round-group-f stadium-mel team-jamaica team-brazil",
-      "date" : "2023-08-02T20:00:00",
-      "description" : "Group F",
-      "group" : "Group F",
-      "result" : null,
-      "stadium" : "MEL",
-      "team1" : "Jamaica",
-      "team2" : "Brazil"
-   },
-   {
-      "class" : "round-group-g stadium-wel team-sweden team-south-africa",
-      "date" : "2023-07-23T17:00:00",
-      "description" : "Group G",
-      "group" : "Group G",
-      "result" : null,
-      "stadium" : "WEL",
-      "team1" : "Sweden",
-      "team2" : "South Africa"
-   },
-   {
-      "class" : "round-group-g stadium-ede team-italy team-argentina",
-      "date" : "2023-07-24T18:00:00",
-      "description" : "Group G",
-      "group" : "Group G",
-      "result" : null,
-      "stadium" : "EDE",
-      "team1" : "Italy",
-      "team2" : "Argentina"
-   },
-   {
-      "class" : "round-group-g stadium-for team-argentina team-south-africa",
-      "date" : "2023-07-28T12:00:00",
-      "description" : "Group G",
-      "group" : "Group G",
+      "class" : "round-group-a stadium-for team-switzerland team-new-zealand",
+      "date" : "2023-07-30T19:00:00",
+      "description" : "Group A",
+      "group" : "Group A",
       "result" : null,
       "stadium" : "FOR",
-      "team1" : "Argentina",
-      "team2" : "South Africa"
+      "team1" : "Switzerland",
+      "team2" : "New Zealand"
    },
    {
-      "class" : "round-group-g stadium-wel team-sweden team-italy",
-      "date" : "2023-07-29T19:30:00",
-      "description" : "Group G",
-      "group" : "Group G",
+      "class" : "round-group-a stadium-ede team-norway team-phillipines",
+      "date" : "2023-07-30T19:00:00",
+      "description" : "Group A",
+      "group" : "Group A",
+      "result" : null,
+      "stadium" : "EDE",
+      "team1" : "Norway",
+      "team2" : "Phillipines"
+   },
+   {
+      "class" : "round-group-h stadium-syd team-germany team-colombia",
+      "date" : "2023-07-30T19:30:00",
+      "description" : "Group H",
+      "group" : "Group H",
+      "result" : null,
+      "stadium" : "SYD",
+      "team1" : "Germany",
+      "team2" : "Colombia"
+   },
+   {
+      "class" : "round-group-c stadium-wel team-japan team-spain",
+      "date" : "2023-07-31T19:00:00",
+      "description" : "Group C",
+      "group" : "Group C",
       "result" : null,
       "stadium" : "WEL",
-      "team1" : "Sweden",
-      "team2" : "Italy"
+      "team1" : "Japan",
+      "team2" : "Spain"
+   },
+   {
+      "class" : "round-group-c stadium-wai team-costa-rica team-zambia",
+      "date" : "2023-07-31T19:00:00",
+      "description" : "Group C",
+      "group" : "Group C",
+      "result" : null,
+      "stadium" : "WAI",
+      "team1" : "Costa Rica",
+      "team2" : "Zambia"
+   },
+   {
+      "class" : "round-group-b stadium-mel team-canada team-australia",
+      "date" : "2023-07-31T20:00:00",
+      "description" : "Group B",
+      "group" : "Group B",
+      "result" : null,
+      "stadium" : "MEL",
+      "team1" : "Canada",
+      "team2" : "Australia"
+   },
+   {
+      "class" : "round-group-b stadium-lp team-republic-of-ireland team-nigeria",
+      "date" : "2023-07-31T20:00:00",
+      "description" : "Group B",
+      "group" : "Group B",
+      "result" : null,
+      "stadium" : "LP",
+      "team1" : "Republic of Ireland",
+      "team2" : "Nigeria"
+   },
+   {
+      "class" : "round-group-d stadium-per team-haiti team-denmark",
+      "date" : "2023-08-01T19:00:00",
+      "description" : "Group D",
+      "group" : "Group D",
+      "result" : null,
+      "stadium" : "PER",
+      "team1" : "Haiti",
+      "team2" : "Denmark"
+   },
+   {
+      "class" : "round-group-e stadium-ede team-portugual team-united-states",
+      "date" : "2023-08-01T19:00:00",
+      "description" : "Group E",
+      "group" : "Group E",
+      "result" : null,
+      "stadium" : "EDE",
+      "team1" : "Portugual",
+      "team2" : "United States"
+   },
+   {
+      "class" : "round-group-e stadium-for team-vietnam team-netherlands",
+      "date" : "2023-08-01T19:00:00",
+      "description" : "Group E",
+      "group" : "Group E",
+      "result" : null,
+      "stadium" : "FOR",
+      "team1" : "Vietnam",
+      "team2" : "Netherlands"
+   },
+   {
+      "class" : "round-group-d stadium-hin team-china team-england",
+      "date" : "2023-08-01T20:30:00",
+      "description" : "Group D",
+      "group" : "Group D",
+      "result" : null,
+      "stadium" : "HIN",
+      "team1" : "China",
+      "team2" : "England"
    },
    {
       "class" : "round-group-g stadium-wai team-argentina team-sweden",
@@ -494,43 +514,33 @@ var games = [
       "team2" : "Italy"
    },
    {
-      "class" : "round-group-h stadium-mel team-germany team-morocco",
-      "date" : "2023-07-24T18:30:00",
-      "description" : "Group H",
-      "group" : "Group H",
+      "class" : "round-group-f stadium-syd team-panama team-france",
+      "date" : "2023-08-02T20:00:00",
+      "description" : "Group F",
+      "group" : "Group F",
+      "result" : null,
+      "stadium" : "SYD",
+      "team1" : "Panama",
+      "team2" : "France"
+   },
+   {
+      "class" : "round-group-f stadium-mel team-jamaica team-brazil",
+      "date" : "2023-08-02T20:00:00",
+      "description" : "Group F",
+      "group" : "Group F",
       "result" : null,
       "stadium" : "MEL",
-      "team1" : "Germany",
-      "team2" : "Morocco"
+      "team1" : "Jamaica",
+      "team2" : "Brazil"
    },
    {
-      "class" : "round-group-h stadium-syd team-columbia team-south-korea",
-      "date" : "2023-07-25T12:00:00",
+      "class" : "round-group-h stadium-per team-morocco team-colombia",
+      "date" : "2023-08-03T18:00:00",
       "description" : "Group H",
       "group" : "Group H",
       "result" : null,
-      "stadium" : "SYD",
-      "team1" : "Columbia",
-      "team2" : "South Korea"
-   },
-   {
-      "class" : "round-group-h stadium-hin team-south-koria team-morocco",
-      "date" : "2023-07-30T14:00:00",
-      "description" : "Group H",
-      "group" : "Group H",
-      "result" : null,
-      "stadium" : "HIN",
-      "team1" : "South Koria",
-      "team2" : "Morocco"
-   },
-   {
-      "class" : "round-group-h stadium-syd team-germany team-colombia",
-      "date" : "2023-07-30T19:30:00",
-      "description" : "Group H",
-      "group" : "Group H",
-      "result" : null,
-      "stadium" : "SYD",
-      "team1" : "Germany",
+      "stadium" : "PER",
+      "team1" : "Morocco",
       "team2" : "Colombia"
    },
    {
@@ -542,16 +552,6 @@ var games = [
       "stadium" : "LP",
       "team1" : "South Korea",
       "team2" : "Germany"
-   },
-   {
-      "class" : "round-group-h stadium-per team-morocco team-colombia",
-      "date" : "2023-08-03T18:00:00",
-      "description" : "Group H",
-      "group" : "Group H",
-      "result" : null,
-      "stadium" : "PER",
-      "team1" : "Morocco",
-      "team2" : "Colombia"
    },
    {
       "class" : "round-round-of-16 stadium-ede",

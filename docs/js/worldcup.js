@@ -51,6 +51,8 @@ $(document).ready(function() {
   let now = moment();
 
   for (i = 0; i < games.length; i++) {
+    console.log(games[i].stadium);
+    console.log(games[i]);
     let stadium = stadiums[games[i].stadium];
     let time = moment.tz(games[i].date, 'UTC');
     games[i].class = games[i].class + ' ' + gameClass(now, games[i]);

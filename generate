@@ -52,6 +52,8 @@ while (<$g_fh>) {
   push @$games, \%game;
 }
 
+@$games = sort { $a->{date} cmp $b->{date} } @$games;
+
 say $d_fh 'var games = ' . $json->encode($games) . ";\n";
 
 sub name2class {
