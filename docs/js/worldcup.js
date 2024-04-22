@@ -15,7 +15,6 @@ function gameClass(now, aGame) {
 function setCookie(key, value, expiry) {
   let expires = new Date();
   expires.setTime(expires.getTime() + (expiry * 24 * 60 * 60 * 1000));
-  // console.log('Setting ' + key + ' to ' + value);
   document.cookie = key + '=' + value + ';expires=' + expires.toUTCString();
 }
 
@@ -29,7 +28,6 @@ function getCookie(key) {
       c = c.substring(1);
     }
     if (c.indexOf(name) == 0) {
-      // console.log('Getting ' + key + ' as ' + c.substring(name.length, c.length));
       return c.substring(name.length, c.length);
     }
   }
@@ -49,10 +47,9 @@ $(document).ready(function() {
   let yourtimezone = moment.tz.guess();
   $('#yourtimezone').html(yourtimezone);
   let now = moment();
+  $('#yourtime').html(now.format('llll'));
 
   for (i = 0; i < games.length; i++) {
-    console.log(games[i].stadium);
-    console.log(games[i]);
     let stadium = stadiums[games[i].stadium];
     let time = moment.tz(games[i].date, 'UTC');
     games[i].class = games[i].class + ' ' + gameClass(now, games[i]);
@@ -70,9 +67,7 @@ $(document).ready(function() {
       stadiums: stadiums
     });
     $('#list').html(rendered);
-    // console.log($('.past'));
     let showpast = getCookie('showpast') == 0 ? false : true;
-    // console.log('showpast is ' + showpast);
     $('#showpast').prop('checked', showpast);
     showHide(showpast);
   });
