@@ -117,7 +117,7 @@ var stadiums = {
 var games = [
    {
       "class" : "round-group-a stadium-mex team-mexico team-south-africa",
-      "date" : "2026-06-11T21:00:00Z",
+      "date" : "2026-06-11T19:00:00Z",
       "description" : "Group A",
       "group" : "Group A",
       "result" : null,
@@ -127,7 +127,7 @@ var games = [
    },
    {
       "class" : "round-group-a stadium-gdl team-south-korea team-czechia",
-      "date" : "2026-06-12T04:00:00Z",
+      "date" : "2026-06-12T02:00:00Z",
       "description" : "Group A",
       "group" : "Group A",
       "result" : null,
@@ -147,7 +147,7 @@ var games = [
    },
    {
       "class" : "round-group-d stadium-lax team-usa team-paraguay",
-      "date" : "2026-06-13T04:00:00Z",
+      "date" : "2026-06-13T01:00:00Z",
       "description" : "Group D",
       "group" : "Group D",
       "result" : null,
@@ -157,7 +157,7 @@ var games = [
    },
    {
       "class" : "round-group-b stadium-sfo team-qatar team-switzerland",
-      "date" : "2026-06-13T22:00:00Z",
+      "date" : "2026-06-13T19:00:00Z",
       "description" : "Group B",
       "group" : "Group B",
       "result" : null,
@@ -187,7 +187,7 @@ var games = [
    },
    {
       "class" : "round-group-d stadium-yvr team-australia team-türkiye",
-      "date" : "2026-06-14T07:00:00Z",
+      "date" : "2026-06-14T04:00:00Z",
       "description" : "Group D",
       "group" : "Group D",
       "result" : null,
@@ -197,7 +197,7 @@ var games = [
    },
    {
       "class" : "round-group-e stadium-iah team-germany team-curaçao",
-      "date" : "2026-06-14T18:00:00Z",
+      "date" : "2026-06-14T17:00:00Z",
       "description" : "Group E",
       "group" : "Group E",
       "result" : null,
@@ -207,7 +207,7 @@ var games = [
    },
    {
       "class" : "round-group-f stadium-dal team-netherlands team-japan",
-      "date" : "2026-06-14T21:00:00Z",
+      "date" : "2026-06-14T20:00:00Z",
       "description" : "Group F",
       "group" : "Group F",
       "result" : null,
@@ -227,7 +227,7 @@ var games = [
    },
    {
       "class" : "round-group-f stadium-mty team-sweden team-tunisia",
-      "date" : "2026-06-15T04:00:00Z",
+      "date" : "2026-06-15T02:00:00Z",
       "description" : "Group F",
       "group" : "Group F",
       "result" : null,
@@ -247,7 +247,7 @@ var games = [
    },
    {
       "class" : "round-group-g stadium-sea team-belgium team-egypt",
-      "date" : "2026-06-15T22:00:00Z",
+      "date" : "2026-06-15T19:00:00Z",
       "description" : "Group G",
       "group" : "Group G",
       "result" : null,
@@ -267,7 +267,7 @@ var games = [
    },
    {
       "class" : "round-group-g stadium-lax team-ir-iran team-new-zealand",
-      "date" : "2026-06-16T04:00:00Z",
+      "date" : "2026-06-16T01:00:00Z",
       "description" : "Group G",
       "group" : "Group G",
       "result" : null,
@@ -297,7 +297,7 @@ var games = [
    },
    {
       "class" : "round-group-j stadium-mci team-argentina team-algeria",
-      "date" : "2026-06-17T02:00:00Z",
+      "date" : "2026-06-17T01:00:00Z",
       "description" : "Group J",
       "group" : "Group J",
       "result" : null,
@@ -307,7 +307,7 @@ var games = [
    },
    {
       "class" : "round-group-j stadium-sfo team-austria team-jordan",
-      "date" : "2026-06-17T07:00:00Z",
+      "date" : "2026-06-17T04:00:00Z",
       "description" : "Group J",
       "group" : "Group J",
       "result" : null,
@@ -317,7 +317,7 @@ var games = [
    },
    {
       "class" : "round-group-k stadium-iah team-portugal team-congo-dr",
-      "date" : "2026-06-17T18:00:00Z",
+      "date" : "2026-06-17T17:00:00Z",
       "description" : "Group K",
       "group" : "Group K",
       "result" : null,
@@ -327,7 +327,7 @@ var games = [
    },
    {
       "class" : "round-group-l stadium-dal team-england team-croatia",
-      "date" : "2026-06-17T21:00:00Z",
+      "date" : "2026-06-17T20:00:00Z",
       "description" : "Group L",
       "group" : "Group L",
       "result" : null,
@@ -347,7 +347,7 @@ var games = [
    },
    {
       "class" : "round-group-k stadium-mex team-uzbekistan team-colombia",
-      "date" : "2026-06-18T04:00:00Z",
+      "date" : "2026-06-18T02:00:00Z",
       "description" : "Group K",
       "group" : "Group K",
       "result" : null,
@@ -367,7 +367,7 @@ var games = [
    },
    {
       "class" : "round-group-b stadium-lax team-switzerland team-bosnia-and-herzegovina",
-      "date" : "2026-06-18T22:00:00Z",
+      "date" : "2026-06-18T19:00:00Z",
       "description" : "Group B",
       "group" : "Group B",
       "result" : null,
@@ -377,7 +377,7 @@ var games = [
    },
    {
       "class" : "round-group-b stadium-yvr team-canada team-qatar",
-      "date" : "2026-06-19T01:00:00Z",
+      "date" : "2026-06-18T22:00:00Z",
       "description" : "Group B",
       "group" : "Group B",
       "result" : null,
@@ -387,7 +387,7 @@ var games = [
    },
    {
       "class" : "round-group-a stadium-gdl team-mexico team-south-korea",
-      "date" : "2026-06-19T03:00:00Z",
+      "date" : "2026-06-19T01:00:00Z",
       "description" : "Group A",
       "group" : "Group A",
       "result" : null,
@@ -397,7 +397,7 @@ var games = [
    },
    {
       "class" : "round-group-d stadium-sea team-usa team-australia",
-      "date" : "2026-06-19T22:00:00Z",
+      "date" : "2026-06-19T19:00:00Z",
       "description" : "Group D",
       "group" : "Group D",
       "result" : null,
@@ -417,7 +417,7 @@ var games = [
    },
    {
       "class" : "round-group-c stadium-phl team-brazil team-haiti",
-      "date" : "2026-06-20T01:00:00Z",
+      "date" : "2026-06-20T00:30:00Z",
       "description" : "Group C",
       "group" : "Group C",
       "result" : null,
@@ -427,7 +427,7 @@ var games = [
    },
    {
       "class" : "round-group-d stadium-sfo team-türkiye team-paraguay",
-      "date" : "2026-06-20T07:00:00Z",
+      "date" : "2026-06-20T03:00:00Z",
       "description" : "Group D",
       "group" : "Group D",
       "result" : null,
@@ -437,7 +437,7 @@ var games = [
    },
    {
       "class" : "round-group-f stadium-iah team-netherlands team-sweden",
-      "date" : "2026-06-20T18:00:00Z",
+      "date" : "2026-06-20T17:00:00Z",
       "description" : "Group F",
       "group" : "Group F",
       "result" : null,
@@ -457,7 +457,7 @@ var games = [
    },
    {
       "class" : "round-group-e stadium-mci team-ecuador team-curaçao",
-      "date" : "2026-06-21T01:00:00Z",
+      "date" : "2026-06-21T00:00:00Z",
       "description" : "Group E",
       "group" : "Group E",
       "result" : null,
@@ -467,7 +467,7 @@ var games = [
    },
    {
       "class" : "round-group-f stadium-mty team-tunisia team-japan",
-      "date" : "2026-06-21T06:00:00Z",
+      "date" : "2026-06-21T04:00:00Z",
       "description" : "Group F",
       "group" : "Group F",
       "result" : null,
@@ -487,7 +487,7 @@ var games = [
    },
    {
       "class" : "round-group-g stadium-lax team-belgium team-ir-iran",
-      "date" : "2026-06-21T22:00:00Z",
+      "date" : "2026-06-21T19:00:00Z",
       "description" : "Group G",
       "group" : "Group G",
       "result" : null,
@@ -507,7 +507,7 @@ var games = [
    },
    {
       "class" : "round-group-g stadium-yvr team-new-zealand team-egypt",
-      "date" : "2026-06-22T04:00:00Z",
+      "date" : "2026-06-22T01:00:00Z",
       "description" : "Group G",
       "group" : "Group G",
       "result" : null,
@@ -517,7 +517,7 @@ var games = [
    },
    {
       "class" : "round-group-j stadium-dal team-argentina team-austria",
-      "date" : "2026-06-22T18:00:00Z",
+      "date" : "2026-06-22T17:00:00Z",
       "description" : "Group J",
       "group" : "Group J",
       "result" : null,
@@ -547,7 +547,7 @@ var games = [
    },
    {
       "class" : "round-group-j stadium-sfo team-jordan team-algeria",
-      "date" : "2026-06-23T06:00:00Z",
+      "date" : "2026-06-23T03:00:00Z",
       "description" : "Group J",
       "group" : "Group J",
       "result" : null,
@@ -557,7 +557,7 @@ var games = [
    },
    {
       "class" : "round-group-k stadium-iah team-portugal team-uzbekistan",
-      "date" : "2026-06-23T18:00:00Z",
+      "date" : "2026-06-23T17:00:00Z",
       "description" : "Group K",
       "group" : "Group K",
       "result" : null,
@@ -587,7 +587,7 @@ var games = [
    },
    {
       "class" : "round-group-k stadium-gdl team-colombia team-congo-dr",
-      "date" : "2026-06-24T04:00:00Z",
+      "date" : "2026-06-24T02:00:00Z",
       "description" : "Group K",
       "group" : "Group K",
       "result" : null,
@@ -597,7 +597,7 @@ var games = [
    },
    {
       "class" : "round-group-b stadium-yvr team-switzerland team-canada",
-      "date" : "2026-06-24T22:00:00Z",
+      "date" : "2026-06-24T19:00:00Z",
       "description" : "Group B",
       "group" : "Group B",
       "result" : null,
@@ -607,7 +607,7 @@ var games = [
    },
    {
       "class" : "round-group-b stadium-sea team-bosnia-and-herzegovina team-qatar",
-      "date" : "2026-06-24T22:00:00Z",
+      "date" : "2026-06-24T19:00:00Z",
       "description" : "Group B",
       "group" : "Group B",
       "result" : null,
@@ -637,7 +637,7 @@ var games = [
    },
    {
       "class" : "round-group-a stadium-mex team-czechia team-mexico",
-      "date" : "2026-06-25T03:00:00Z",
+      "date" : "2026-06-25T01:00:00Z",
       "description" : "Group A",
       "group" : "Group A",
       "result" : null,
@@ -647,7 +647,7 @@ var games = [
    },
    {
       "class" : "round-group-a stadium-mty team-south-africa team-south-korea",
-      "date" : "2026-06-25T03:00:00Z",
+      "date" : "2026-06-25T01:00:00Z",
       "description" : "Group A",
       "group" : "Group A",
       "result" : null,
@@ -677,7 +677,7 @@ var games = [
    },
    {
       "class" : "round-group-f stadium-dal team-japan team-sweden",
-      "date" : "2026-06-26T00:00:00Z",
+      "date" : "2026-06-25T23:00:00Z",
       "description" : "Group F",
       "group" : "Group F",
       "result" : null,
@@ -687,7 +687,7 @@ var games = [
    },
    {
       "class" : "round-group-f stadium-mci team-tunisia team-netherlands",
-      "date" : "2026-06-26T00:00:00Z",
+      "date" : "2026-06-25T23:00:00Z",
       "description" : "Group F",
       "group" : "Group F",
       "result" : null,
@@ -697,7 +697,7 @@ var games = [
    },
    {
       "class" : "round-group-d stadium-lax team-türkiye team-usa",
-      "date" : "2026-06-26T05:00:00Z",
+      "date" : "2026-06-26T02:00:00Z",
       "description" : "Group D",
       "group" : "Group D",
       "result" : null,
@@ -707,7 +707,7 @@ var games = [
    },
    {
       "class" : "round-group-d stadium-sfo team-paraguay team-australia",
-      "date" : "2026-06-26T05:00:00Z",
+      "date" : "2026-06-26T02:00:00Z",
       "description" : "Group D",
       "group" : "Group D",
       "result" : null,
@@ -737,7 +737,7 @@ var games = [
    },
    {
       "class" : "round-group-h stadium-iah team-cabo-verde team-saudi-arabia",
-      "date" : "2026-06-27T01:00:00Z",
+      "date" : "2026-06-27T00:00:00Z",
       "description" : "Group H",
       "group" : "Group H",
       "result" : null,
@@ -747,7 +747,7 @@ var games = [
    },
    {
       "class" : "round-group-h stadium-gdl team-uruguay team-spain",
-      "date" : "2026-06-27T02:00:00Z",
+      "date" : "2026-06-27T00:00:00Z",
       "description" : "Group H",
       "group" : "Group H",
       "result" : null,
@@ -757,7 +757,7 @@ var games = [
    },
    {
       "class" : "round-group-g stadium-sea team-egypt team-ir-iran",
-      "date" : "2026-06-27T06:00:00Z",
+      "date" : "2026-06-27T03:00:00Z",
       "description" : "Group G",
       "group" : "Group G",
       "result" : null,
@@ -767,7 +767,7 @@ var games = [
    },
    {
       "class" : "round-group-g stadium-yvr team-new-zealand team-belgium",
-      "date" : "2026-06-27T06:00:00Z",
+      "date" : "2026-06-27T03:00:00Z",
       "description" : "Group G",
       "group" : "Group G",
       "result" : null,
@@ -817,7 +817,7 @@ var games = [
    },
    {
       "class" : "round-group-j stadium-mci team-algeria team-austria",
-      "date" : "2026-06-28T03:00:00Z",
+      "date" : "2026-06-28T02:00:00Z",
       "description" : "Group J",
       "group" : "Group J",
       "result" : null,
@@ -827,7 +827,7 @@ var games = [
    },
    {
       "class" : "round-group-j stadium-dal team-jordan team-argentina",
-      "date" : "2026-06-28T03:00:00Z",
+      "date" : "2026-06-28T02:00:00Z",
       "description" : "Group J",
       "group" : "Group J",
       "result" : null,
@@ -837,7 +837,7 @@ var games = [
    },
    {
       "class" : "round-round-of-32 stadium-lax",
-      "date" : "2026-06-28T22:00:00Z",
+      "date" : "2026-06-28T19:00:00Z",
       "description" : "Round of 32",
       "group" : null,
       "result" : null,
@@ -846,8 +846,18 @@ var games = [
       "team2" : "Runner-up Group B"
    },
    {
+      "class" : "round-round-of-32 stadium-mty",
+      "date" : "2026-06-29T17:00:00Z",
+      "description" : "Round of 32",
+      "group" : null,
+      "result" : null,
+      "stadium" : "MTY",
+      "team1" : "Winner Group F",
+      "team2" : "Runner-up Group C"
+   },
+   {
       "class" : "round-round-of-32 stadium-iah",
-      "date" : "2026-06-29T18:00:00Z",
+      "date" : "2026-06-29T20:30:00Z",
       "description" : "Round of 32",
       "group" : null,
       "result" : null,
@@ -857,7 +867,7 @@ var games = [
    },
    {
       "class" : "round-round-of-32 stadium-bos team-third-place-group-a/b/c/d/f",
-      "date" : "2026-06-29T20:30:00Z",
+      "date" : "2026-06-30T01:00:00Z",
       "description" : "Round of 32",
       "group" : null,
       "result" : null,
@@ -866,28 +876,8 @@ var games = [
       "team2" : "Third place Group A/B/C/D/F"
    },
    {
-      "class" : "round-round-of-32 stadium-mty",
-      "date" : "2026-06-30T03:00:00Z",
-      "description" : "Round of 32",
-      "group" : null,
-      "result" : null,
-      "stadium" : "MTY",
-      "team1" : "Winner Group F",
-      "team2" : "Runner-up Group C"
-   },
-   {
-      "class" : "round-round-of-32 stadium-dal",
-      "date" : "2026-06-30T18:00:00Z",
-      "description" : "Round of 32",
-      "group" : null,
-      "result" : null,
-      "stadium" : "DAL",
-      "team1" : "Runner-up Group E",
-      "team2" : "Runner-up Group I"
-   },
-   {
       "class" : "round-round-of-32 stadium-ewr team-third-place-group-c/d/f/g/h",
-      "date" : "2026-06-30T21:00:00Z",
+      "date" : "2026-06-30T17:00:00Z",
       "description" : "Round of 32",
       "group" : null,
       "result" : null,
@@ -896,8 +886,18 @@ var games = [
       "team2" : "Third place Group C/D/F/G/H"
    },
    {
+      "class" : "round-round-of-32 stadium-dal",
+      "date" : "2026-06-30T21:00:00Z",
+      "description" : "Round of 32",
+      "group" : null,
+      "result" : null,
+      "stadium" : "DAL",
+      "team1" : "Runner-up Group E",
+      "team2" : "Runner-up Group I"
+   },
+   {
       "class" : "round-round-of-32 stadium-mex team-third-place-group-c/e/f/h/i",
-      "date" : "2026-07-01T03:00:00Z",
+      "date" : "2026-07-01T01:00:00Z",
       "description" : "Round of 32",
       "group" : null,
       "result" : null,
@@ -916,18 +916,8 @@ var games = [
       "team2" : "Third place Group E/H/I/J/K"
    },
    {
-      "class" : "round-round-of-32 stadium-sea team-third-place-group-a/e/h/i/j",
-      "date" : "2026-07-01T23:00:00Z",
-      "description" : "Round of 32",
-      "group" : null,
-      "result" : null,
-      "stadium" : "SEA",
-      "team1" : "Winner Group G",
-      "team2" : "Third place Group A/E/H/I/J"
-   },
-   {
       "class" : "round-round-of-32 stadium-sfo team-third-place-group-b/e/f/i/j",
-      "date" : "2026-07-02T03:00:00Z",
+      "date" : "2026-07-01T20:00:00Z",
       "description" : "Round of 32",
       "group" : null,
       "result" : null,
@@ -936,18 +926,18 @@ var games = [
       "team2" : "Third place Group B/E/F/I/J"
    },
    {
-      "class" : "round-round-of-32 stadium-lax",
-      "date" : "2026-07-02T22:00:00Z",
+      "class" : "round-round-of-32 stadium-sea team-third-place-group-a/e/h/i/j",
+      "date" : "2026-07-02T00:00:00Z",
       "description" : "Round of 32",
       "group" : null,
       "result" : null,
-      "stadium" : "LAX",
-      "team1" : "Winner Group H",
-      "team2" : "Runner-up Group J"
+      "stadium" : "SEA",
+      "team1" : "Winner Group G",
+      "team2" : "Third place Group A/E/H/I/J"
    },
    {
       "class" : "round-round-of-32 stadium-yyz",
-      "date" : "2026-07-02T23:00:00Z",
+      "date" : "2026-07-02T19:00:00Z",
       "description" : "Round of 32",
       "group" : null,
       "result" : null,
@@ -956,8 +946,18 @@ var games = [
       "team2" : "Runner-up Group L"
    },
    {
+      "class" : "round-round-of-32 stadium-lax",
+      "date" : "2026-07-02T23:00:00Z",
+      "description" : "Round of 32",
+      "group" : null,
+      "result" : null,
+      "stadium" : "LAX",
+      "team1" : "Winner Group H",
+      "team2" : "Runner-up Group J"
+   },
+   {
       "class" : "round-round-of-32 stadium-yvr team-third-place-group-e/f/g/i/j",
-      "date" : "2026-07-03T06:00:00Z",
+      "date" : "2026-07-03T03:00:00Z",
       "description" : "Round of 32",
       "group" : null,
       "result" : null,
@@ -966,8 +966,18 @@ var games = [
       "team2" : "Third place Group E/F/G/I/J"
    },
    {
+      "class" : "round-round-of-32 stadium-mci team-third-place-group-d/e/i/j/l",
+      "date" : "2026-07-03T18:00:00Z",
+      "description" : "Round of 32",
+      "group" : null,
+      "result" : null,
+      "stadium" : "MCI",
+      "team1" : "Winner Group K",
+      "team2" : "Third place Group D/E/I/J/L"
+   },
+   {
       "class" : "round-round-of-32 stadium-dal",
-      "date" : "2026-07-03T19:00:00Z",
+      "date" : "2026-07-03T22:00:00Z",
       "description" : "Round of 32",
       "group" : null,
       "result" : null,
@@ -977,7 +987,7 @@ var games = [
    },
    {
       "class" : "round-round-of-32 stadium-mia",
-      "date" : "2026-07-03T22:00:00Z",
+      "date" : "2026-07-04T01:30:00Z",
       "description" : "Round of 32",
       "group" : null,
       "result" : null,
@@ -986,34 +996,24 @@ var games = [
       "team2" : "Runner-up Group H"
    },
    {
-      "class" : "round-round-of-32 stadium-mci team-third-place-group-d/e/i/j/l",
-      "date" : "2026-07-04T02:30:00Z",
-      "description" : "Round of 32",
-      "group" : null,
-      "result" : null,
-      "stadium" : "MCI",
-      "team1" : "Winner Group K",
-      "team2" : "Third place Group D/E/I/J/L"
-   },
-   {
-      "class" : "round-round-of-16 stadium-iah",
-      "date" : "2026-07-04T18:00:00Z",
-      "description" : "Round of 16",
-      "group" : null,
-      "result" : null,
-      "stadium" : "IAH",
-      "team1" : "Winner Match 73",
-      "team2" : "Winner Match 75"
-   },
-   {
       "class" : "round-round-of-16 stadium-phl",
-      "date" : "2026-07-04T21:00:00Z",
+      "date" : "2026-07-04T17:00:00Z",
       "description" : "Round of 16",
       "group" : null,
       "result" : null,
       "stadium" : "PHL",
       "team1" : "Winner Match 74",
       "team2" : "Winner Match 77"
+   },
+   {
+      "class" : "round-round-of-16 stadium-iah",
+      "date" : "2026-07-04T21:00:00Z",
+      "description" : "Round of 16",
+      "group" : null,
+      "result" : null,
+      "stadium" : "IAH",
+      "team1" : "Winner Match 73",
+      "team2" : "Winner Match 75"
    },
    {
       "class" : "round-round-of-16 stadium-ewr",
@@ -1027,7 +1027,7 @@ var games = [
    },
    {
       "class" : "round-round-of-16 stadium-mex",
-      "date" : "2026-07-06T02:00:00Z",
+      "date" : "2026-07-06T00:00:00Z",
       "description" : "Round of 16",
       "group" : null,
       "result" : null,
@@ -1037,7 +1037,7 @@ var games = [
    },
    {
       "class" : "round-round-of-16 stadium-dal",
-      "date" : "2026-07-06T20:00:00Z",
+      "date" : "2026-07-06T19:00:00Z",
       "description" : "Round of 16",
       "group" : null,
       "result" : null,
@@ -1047,7 +1047,7 @@ var games = [
    },
    {
       "class" : "round-round-of-16 stadium-sea",
-      "date" : "2026-07-07T03:00:00Z",
+      "date" : "2026-07-07T00:00:00Z",
       "description" : "Round of 16",
       "group" : null,
       "result" : null,
@@ -1067,7 +1067,7 @@ var games = [
    },
    {
       "class" : "round-round-of-16 stadium-yvr",
-      "date" : "2026-07-07T23:00:00Z",
+      "date" : "2026-07-07T20:00:00Z",
       "description" : "Round of 16",
       "group" : null,
       "result" : null,
@@ -1087,7 +1087,7 @@ var games = [
    },
    {
       "class" : "round-quarterfinals stadium-lax",
-      "date" : "2026-07-10T22:00:00Z",
+      "date" : "2026-07-10T19:00:00Z",
       "description" : "Quarterfinals",
       "group" : null,
       "result" : null,
@@ -1107,7 +1107,7 @@ var games = [
    },
    {
       "class" : "round-quarterfinals stadium-mci",
-      "date" : "2026-07-12T02:00:00Z",
+      "date" : "2026-07-12T01:00:00Z",
       "description" : "Quarterfinals",
       "group" : null,
       "result" : null,
@@ -1117,7 +1117,7 @@ var games = [
    },
    {
       "class" : "round-semifinals stadium-dal",
-      "date" : "2026-07-14T20:00:00Z",
+      "date" : "2026-07-14T19:00:00Z",
       "description" : "Semifinals",
       "group" : null,
       "result" : null,
