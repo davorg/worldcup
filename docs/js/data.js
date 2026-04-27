@@ -186,24 +186,24 @@ var games = [
       "team2" : "Scotland"
    },
    {
-      "class" : "round-group-d stadium-yvr team-australia team-tÃ¼rkiye",
+      "class" : "round-group-d stadium-yvr team-australia team-türkiye",
       "date" : "2026-06-14T07:00:00Z",
       "description" : "Group D",
       "group" : "Group D",
       "result" : null,
       "stadium" : "YVR",
       "team1" : "Australia",
-      "team2" : "TÃ¼rkiye"
+      "team2" : "Türkiye"
    },
    {
-      "class" : "round-group-e stadium-iah team-germany team-curaÃ§ao",
+      "class" : "round-group-e stadium-iah team-germany team-curaçao",
       "date" : "2026-06-14T18:00:00Z",
       "description" : "Group E",
       "group" : "Group E",
       "result" : null,
       "stadium" : "IAH",
       "team1" : "Germany",
-      "team2" : "CuraÃ§ao"
+      "team2" : "Curaçao"
    },
    {
       "class" : "round-group-f stadium-dal team-netherlands team-japan",
@@ -216,13 +216,13 @@ var games = [
       "team2" : "Japan"
    },
    {
-      "class" : "round-group-e stadium-phl team-cÃ´te-d'ivoire team-ecuador",
+      "class" : "round-group-e stadium-phl team-côte-d'ivoire team-ecuador",
       "date" : "2026-06-14T23:00:00Z",
       "description" : "Group E",
       "group" : "Group E",
       "result" : null,
       "stadium" : "PHL",
-      "team1" : "CÃ´te d'Ivoire",
+      "team1" : "Côte d'Ivoire",
       "team2" : "Ecuador"
    },
    {
@@ -426,13 +426,13 @@ var games = [
       "team2" : "Haiti"
    },
    {
-      "class" : "round-group-d stadium-sfo team-tÃ¼rkiye team-paraguay",
+      "class" : "round-group-d stadium-sfo team-türkiye team-paraguay",
       "date" : "2026-06-20T07:00:00Z",
       "description" : "Group D",
       "group" : "Group D",
       "result" : null,
       "stadium" : "SFO",
-      "team1" : "TÃ¼rkiye",
+      "team1" : "Türkiye",
       "team2" : "Paraguay"
    },
    {
@@ -446,24 +446,24 @@ var games = [
       "team2" : "Sweden"
    },
    {
-      "class" : "round-group-e stadium-yyz team-germany team-cÃ´te-d'ivoire",
+      "class" : "round-group-e stadium-yyz team-germany team-côte-d'ivoire",
       "date" : "2026-06-20T20:00:00Z",
       "description" : "Group E",
       "group" : "Group E",
       "result" : null,
       "stadium" : "YYZ",
       "team1" : "Germany",
-      "team2" : "CÃ´te d'Ivoire"
+      "team2" : "Côte d'Ivoire"
    },
    {
-      "class" : "round-group-e stadium-mci team-ecuador team-curaÃ§ao",
+      "class" : "round-group-e stadium-mci team-ecuador team-curaçao",
       "date" : "2026-06-21T01:00:00Z",
       "description" : "Group E",
       "group" : "Group E",
       "result" : null,
       "stadium" : "MCI",
       "team1" : "Ecuador",
-      "team2" : "CuraÃ§ao"
+      "team2" : "Curaçao"
    },
    {
       "class" : "round-group-f stadium-mty team-tunisia team-japan",
@@ -656,14 +656,14 @@ var games = [
       "team2" : "South Korea"
    },
    {
-      "class" : "round-group-e stadium-phl team-curaÃ§ao team-cÃ´te-d'ivoire",
+      "class" : "round-group-e stadium-phl team-curaçao team-côte-d'ivoire",
       "date" : "2026-06-25T20:00:00Z",
       "description" : "Group E",
       "group" : "Group E",
       "result" : null,
       "stadium" : "PHL",
-      "team1" : "CuraÃ§ao",
-      "team2" : "CÃ´te d'Ivoire"
+      "team1" : "Curaçao",
+      "team2" : "Côte d'Ivoire"
    },
    {
       "class" : "round-group-e stadium-ewr team-ecuador team-germany",
@@ -696,13 +696,13 @@ var games = [
       "team2" : "Netherlands"
    },
    {
-      "class" : "round-group-d stadium-lax team-tÃ¼rkiye team-usa",
+      "class" : "round-group-d stadium-lax team-türkiye team-usa",
       "date" : "2026-06-26T05:00:00Z",
       "description" : "Group D",
       "group" : "Group D",
       "result" : null,
       "stadium" : "LAX",
-      "team1" : "TÃ¼rkiye",
+      "team1" : "Türkiye",
       "team2" : "USA"
    },
    {

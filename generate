@@ -13,7 +13,7 @@ my $json = JSON->new->pretty->utf8->canonical;
 
 open my $d_fh, '>', 'docs/js/data.js' or die "$!";
 
-open my $s_fh, '<', 'stadiums.csv' or die "$!";
+open my $s_fh, '<:encoding(UTF-8)', 'stadiums.csv' or die "$!";
 
 my $stadiums;
 
@@ -35,7 +35,7 @@ while (<$s_fh>) {
 
 say $d_fh 'var stadiums = ' . $json->encode($stadiums) . ";\n";
 
-open my $g_fh, '<', 'games.csv' or die "$!";
+open my $g_fh, '<:encoding(UTF-8)', 'games.csv' or die "$!";
 
 my $games;
 
