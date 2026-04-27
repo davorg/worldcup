@@ -5,7 +5,9 @@ use warnings;
 use feature 'say';
 
 use Time::Piece;
+use Text::ParseWords;
 use JSON;
+use Data::Printer;
 
 my $json = JSON->new->pretty->utf8->canonical;
 
@@ -20,7 +22,14 @@ my @cols = qw[code name city utcoffset timezone];
 while (<$s_fh>) {
   chomp;
   my %stad;
-  @stad{@cols} = split /,/;
+  @stad{@cols} = quotewords(',', 0, $_);
+
+  unless ($stad{code}) {
+    say $_;
+    p %stad;
+    next;
+  }
+
   $stadiums->{$stad{code}} = \%stad;
 }
 
@@ -39,7 +48,7 @@ while (<$g_fh>) {
 
   $game{description} = $game{group} if $game{description} !~ /\D/;
 
-  $game{date} = Time::Piece->strptime($game{date}, '%d/%m/%Y %H:%M')->datetime;
+  $game{date} = Time::Piece->strptime($game{date}, '%d/%m/%Y %H:%M')->datetime . 'Z';
 
   my @classes = ("round-$game{description}", "stadium-$game{stadium}");
   push @classes, map { "team-$_" }

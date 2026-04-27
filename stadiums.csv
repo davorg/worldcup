@@ -1,10 +1,16 @@
-AUS,Stadium Australia,Sydney,10,Australia/Sydney
-SYD,Sydney Football Stadium,Sydney,10,Australia/Sydney
-LP,Lang Park,Brisbane,10,Australia/Sydney
-MEL,Melbourne Rectangular Stadium,Melbourne,10,Australia/Melbourne
-PER,Perth Rectangular Stadium,Perth,8,Australia/Perth
-HIN,Hindmarsh Stadium,Adelaide,9.5,Australia/Adelaide
-EDE,Eden Park,Auckland,12,Pacific/Auckland
-WEL,Wellington Regional Stadium,Wellington,12,Pacific/Auckland
-FOR,Forsyth Barr Stadium,Dunedin,12,Pacific/Auckland
-WAI,Waikato Stadium,Hamilton,12,Pacific/Auckland
+ATL,Mercedes-Benz Stadium,"Atlanta, USA",-4,America/New_York
+BOS,Gillette Stadium,"Boston, USA",-4,America/New_York
+DAL,AT&T Stadium,"Dallas, USA",-5,America/Chicago
+IAH,NRG Stadium,"Houston, USA",-5,America/Chicago
+MCI,Arrowhead Stadium,"Kansas City, USA",-5,America/Chicago
+LAX,SoFi Stadium,"Los Angeles, USA",-7,America/Los_Angeles
+MIA,Hard Rock Stadium,"Miami, USA",-4,America/New_York
+EWR,MetLife Stadium,"New York/New Jersey, USA",-4,America/New_York
+PHL,Lincoln Financial Field,"Philadelphia, USA",-4,America/New_York
+SFO,"Levi's Stadium","San Francisco Bay Area, USA",-7,America/Los_Angeles
+SEA,Lumen Field,"Seattle, USA",-7,America/Los_Angeles
+YYZ,BMO Field,"Toronto, Canada",-4,America/Toronto
+YVR,BC Place,"Vancouver, Canada",-7,America/Vancouver
+GDL,Estadio Akron,"Guadalajara, Mexico",-6,America/Mexico_City
+MEX,Estadio Azteca,"Mexico City, Mexico",-6,America/Mexico_City
+MTY,Estadio BBVA,"Monterrey, Mexico",-6,America/Monterrey
