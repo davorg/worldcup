@@ -44,10 +44,14 @@ function showHide(show) {
 
 $(document).ready(function() {
 
+  // Mon, Apr 27, 2026 17:26
+
+  let theFormat = 'ddd, MMM D, YYYY HH:mm';
+
   let yourtimezone = moment.tz.guess();
   $('#yourtimezone').html(yourtimezone);
   let now = moment();
-  $('#yourtime').html(now.format('llll'));
+  $('#yourtime').html(now.format(theFormat));
 
   for (i = 0; i < games.length; i++) {
     let stadium = stadiums[games[i].stadium];
@@ -55,9 +59,9 @@ $(document).ready(function() {
     games[i].class = games[i].class + ' ' + gameClass(now, games[i]);
     games[i].stadium = stadium.name;
     games[i].city = stadium.city;
-    games[i].timeutc = time.format('llll');
-    games[i].timestadium = time.clone().tz(stadium.timezone).format('llll');
-    games[i].timeuser = time.clone().tz(yourtimezone).format('llll');
+    games[i].timeutc = time.format(theFormat);
+    games[i].timestadium = time.clone().tz(stadium.timezone).format(theFormat);
+    games[i].timeuser = time.clone().tz(yourtimezone).format(theFormat);
   }
 
   $.get('templates.html', function(templates) {
